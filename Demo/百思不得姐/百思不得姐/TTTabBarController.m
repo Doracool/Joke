@@ -7,7 +7,10 @@
 //
 
 #import "TTTabBarController.h"
-
+#import "TTEssenceViewController.h"
+#import "TTNewViewController.h"
+#import "TTFriendTrendsViewController.h"
+#import "TTMeViewController.h"
 @interface TTTabBarController ()
 
 @end
@@ -32,48 +35,18 @@
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
     //添加子控制器
-    UIViewController *vc1 = [[UIViewController alloc] init];
-    vc1.view.backgroundColor = [UIColor yellowColor];
-    vc1.tabBarItem.title = @"精华";
-    vc1.tabBarItem.image = [UIImage imageNamed:@"tabBar_essence_icon"];
-    vc1.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_essence_click_icon"];
-    [self addChildViewController:vc1];
-    
-    UIViewController *vc2 = [[UIViewController alloc] init];
-    vc2.view.backgroundColor = [UIColor orangeColor];
-    vc2.tabBarItem.title = @"新帖";
-    vc2.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
-    vc2.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_new_click_icon"];
-    [self addChildViewController:vc2];
-    
-    UIViewController *vc3 = [[UIViewController alloc] init];
-    vc3.view.backgroundColor = [UIColor orangeColor];
-    vc3.tabBarItem.title = @"关注";
-    vc3.tabBarItem.image = [UIImage imageNamed:@"tabBar_me_icon"];
-    vc3.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_me_click_icon"];
-    [self addChildViewController:vc3];
-    
-    UIViewController *vc4 = [[UIViewController alloc] init];
-    vc4.view.backgroundColor = [UIColor orangeColor];
-    vc4.tabBarItem.title = @"我";
-    vc4.tabBarItem.image = [UIImage imageNamed:@"tabBar_friendTrends_icon"];
-    vc4.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_friendTrends_click_icon"];
-    [self addChildViewController:vc4];
+    [self setupChildVc:[[TTEssenceViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
+
+    [self setupChildVc:[[TTNewViewController alloc] init] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+    [self setupChildVc:[[TTFriendTrendsViewController alloc] init] title:@"关注" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    [self setupChildVc:[[TTMeViewController alloc] init] title:@"我" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupChildVc:(UIViewController *)vc title:(NSString *)title image:(NSString *)Image selectedImage:(NSString *)selectedImage{
+    vc.tabBarItem.title = title;
+    vc.tabBarItem.image = [UIImage imageNamed:Image];
+    vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
+    [self addChildViewController:vc];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

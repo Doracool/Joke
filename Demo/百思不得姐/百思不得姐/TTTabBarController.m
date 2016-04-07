@@ -11,6 +11,7 @@
 #import "TTNewViewController.h"
 #import "TTFriendTrendsViewController.h"
 #import "TTMeViewController.h"
+#import "TTTabBar.h"
 @interface TTTabBarController ()
 
 @end
@@ -40,6 +41,10 @@
     [self setupChildVc:[[TTNewViewController alloc] init] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
     [self setupChildVc:[[TTFriendTrendsViewController alloc] init] title:@"关注" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
     [self setupChildVc:[[TTMeViewController alloc] init] title:@"我" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
+    
+    //更换tabbar
+//    self.tabBar = [[TTTabBar alloc] init];
+    [self setValue:[[TTTabBar alloc] init] forKeyPath:@"tabBar"];
 }
 
 - (void)setupChildVc:(UIViewController *)vc title:(NSString *)title image:(NSString *)Image selectedImage:(NSString *)selectedImage{

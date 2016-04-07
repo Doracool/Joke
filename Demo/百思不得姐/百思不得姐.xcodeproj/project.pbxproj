@@ -17,6 +17,7 @@
 		610347E51CB635630088F9ED /* TTNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347E41CB635630088F9ED /* TTNewViewController.m */; };
 		610347E81CB635760088F9ED /* TTFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347E71CB635760088F9ED /* TTFriendTrendsViewController.m */; };
 		610347EB1CB635800088F9ED /* TTMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347EA1CB635800088F9ED /* TTMeViewController.m */; };
+		610347EE1CB638E40088F9ED /* TTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347ED1CB638E40088F9ED /* TTTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		610347E71CB635760088F9ED /* TTFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTFriendTrendsViewController.m; sourceTree = "<group>"; };
 		610347E91CB635800088F9ED /* TTMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMeViewController.h; sourceTree = "<group>"; };
 		610347EA1CB635800088F9ED /* TTMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMeViewController.m; sourceTree = "<group>"; };
+		610347EC1CB638E40088F9ED /* TTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBar.h; sourceTree = "<group>"; };
+		610347ED1CB638E40088F9ED /* TTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				610347AD1CB5F01B0088F9ED /* AppDelegate.h */,
 				610347AE1CB5F01B0088F9ED /* AppDelegate.m */,
 				610347DD1CB5F51C0088F9ED /* TTTabBarController.h */,
+				610347EC1CB638E40088F9ED /* TTTabBar.h */,
+				610347ED1CB638E40088F9ED /* TTTabBar.m */,
 				610347DE1CB5F51C0088F9ED /* TTTabBarController.m */,
 				610347E01CB635530088F9ED /* TTEssenceViewController.h */,
 				610347E11CB635530088F9ED /* TTEssenceViewController.m */,
@@ -283,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				610347DF1CB5F51C0088F9ED /* TTTabBarController.m in Sources */,
+				610347EE1CB638E40088F9ED /* TTTabBar.m in Sources */,
 				610347E21CB635530088F9ED /* TTEssenceViewController.m in Sources */,
 				610347AF1CB5F01B0088F9ED /* AppDelegate.m in Sources */,
 				610347E51CB635630088F9ED /* TTNewViewController.m in Sources */,

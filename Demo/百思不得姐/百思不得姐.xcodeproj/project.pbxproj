@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		610347AC1CB5F01B0088F9ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347AB1CB5F01B0088F9ED /* main.m */; };
-		610347AF1CB5F01B0088F9ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347AE1CB5F01B0088F9ED /* AppDelegate.m */; };
 		610347B71CB5F01B0088F9ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610347B61CB5F01B0088F9ED /* Assets.xcassets */; };
 		610347C51CB5F01B0088F9ED /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347C41CB5F01B0088F9ED /* _____Tests.m */; };
 		610347D01CB5F01B0088F9ED /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347CF1CB5F01B0088F9ED /* _____UITests.m */; };
-		610347DF1CB5F51C0088F9ED /* TTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347DE1CB5F51C0088F9ED /* TTTabBarController.m */; };
-		610347E21CB635530088F9ED /* TTEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347E11CB635530088F9ED /* TTEssenceViewController.m */; };
-		610347E51CB635630088F9ED /* TTNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347E41CB635630088F9ED /* TTNewViewController.m */; };
-		610347E81CB635760088F9ED /* TTFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347E71CB635760088F9ED /* TTFriendTrendsViewController.m */; };
-		610347EB1CB635800088F9ED /* TTMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347EA1CB635800088F9ED /* TTMeViewController.m */; };
-		610347EE1CB638E40088F9ED /* TTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347ED1CB638E40088F9ED /* TTTabBar.m */; };
-		610347F21CB640CA0088F9ED /* UIView+TTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347F11CB640CA0088F9ED /* UIView+TTExtension.m */; };
-		610347F61CB6568C0088F9ED /* UIBarButtonItem+TTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347F51CB6568C0088F9ED /* UIBarButtonItem+TTExtension.m */; };
+		610348201CB65CDB0088F9ED /* TTEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347FB1CB65CDB0088F9ED /* TTEssenceViewController.m */; };
+		610348211CB65CDB0088F9ED /* TTFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610348011CB65CDB0088F9ED /* TTFriendTrendsViewController.m */; };
+		610348221CB65CDB0088F9ED /* TTMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610348071CB65CDB0088F9ED /* TTMeViewController.m */; };
+		610348231CB65CDB0088F9ED /* TTNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6103480D1CB65CDB0088F9ED /* TTNewViewController.m */; };
+		610348241CB65CDB0088F9ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 610348121CB65CDB0088F9ED /* AppDelegate.m */; };
+		610348251CB65CDB0088F9ED /* UIBarButtonItem+TTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 610348151CB65CDB0088F9ED /* UIBarButtonItem+TTExtension.m */; };
+		610348261CB65CDB0088F9ED /* UIView+TTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 610348171CB65CDB0088F9ED /* UIView+TTExtension.m */; };
+		610348271CB65CDB0088F9ED /* TTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6103481A1CB65CDB0088F9ED /* TTTabBarController.m */; };
+		610348281CB65CDB0088F9ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6103481B1CB65CDB0088F9ED /* main.m */; };
+		610348291CB65CDB0088F9ED /* TTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6103481F1CB65CDB0088F9ED /* TTTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +41,6 @@
 
 /* Begin PBXFileReference section */
 		610347A71CB5F01B0088F9ED /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		610347AB1CB5F01B0088F9ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		610347AD1CB5F01B0088F9ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		610347AE1CB5F01B0088F9ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		610347B61CB5F01B0088F9ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		610347BB1CB5F01B0088F9ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		610347C01CB5F01B0088F9ED /* 百思不得姐Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,23 +49,26 @@
 		610347CB1CB5F01B0088F9ED /* 百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		610347CF1CB5F01B0088F9ED /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		610347D11CB5F01B0088F9ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		610347DD1CB5F51C0088F9ED /* TTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBarController.h; sourceTree = "<group>"; };
-		610347DE1CB5F51C0088F9ED /* TTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBarController.m; sourceTree = "<group>"; };
-		610347E01CB635530088F9ED /* TTEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTEssenceViewController.h; sourceTree = "<group>"; };
-		610347E11CB635530088F9ED /* TTEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTEssenceViewController.m; sourceTree = "<group>"; };
-		610347E31CB635630088F9ED /* TTNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNewViewController.h; sourceTree = "<group>"; };
-		610347E41CB635630088F9ED /* TTNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNewViewController.m; sourceTree = "<group>"; };
-		610347E61CB635760088F9ED /* TTFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTFriendTrendsViewController.h; sourceTree = "<group>"; };
-		610347E71CB635760088F9ED /* TTFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTFriendTrendsViewController.m; sourceTree = "<group>"; };
-		610347E91CB635800088F9ED /* TTMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMeViewController.h; sourceTree = "<group>"; };
-		610347EA1CB635800088F9ED /* TTMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMeViewController.m; sourceTree = "<group>"; };
-		610347EC1CB638E40088F9ED /* TTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBar.h; sourceTree = "<group>"; };
-		610347ED1CB638E40088F9ED /* TTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBar.m; sourceTree = "<group>"; };
-		610347F01CB640CA0088F9ED /* UIView+TTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TTExtension.h"; sourceTree = "<group>"; };
-		610347F11CB640CA0088F9ED /* UIView+TTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTExtension.m"; sourceTree = "<group>"; };
-		610347F31CB642810088F9ED /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		610347F41CB6568C0088F9ED /* UIBarButtonItem+TTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+TTExtension.h"; sourceTree = "<group>"; };
-		610347F51CB6568C0088F9ED /* UIBarButtonItem+TTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TTExtension.m"; sourceTree = "<group>"; };
+		610347FA1CB65CDB0088F9ED /* TTEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTEssenceViewController.h; sourceTree = "<group>"; };
+		610347FB1CB65CDB0088F9ED /* TTEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTEssenceViewController.m; sourceTree = "<group>"; };
+		610348001CB65CDB0088F9ED /* TTFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTFriendTrendsViewController.h; sourceTree = "<group>"; };
+		610348011CB65CDB0088F9ED /* TTFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTFriendTrendsViewController.m; sourceTree = "<group>"; };
+		610348061CB65CDB0088F9ED /* TTMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMeViewController.h; sourceTree = "<group>"; };
+		610348071CB65CDB0088F9ED /* TTMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMeViewController.m; sourceTree = "<group>"; };
+		6103480C1CB65CDB0088F9ED /* TTNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNewViewController.h; sourceTree = "<group>"; };
+		6103480D1CB65CDB0088F9ED /* TTNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNewViewController.m; sourceTree = "<group>"; };
+		610348111CB65CDB0088F9ED /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		610348121CB65CDB0088F9ED /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		610348141CB65CDB0088F9ED /* UIBarButtonItem+TTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+TTExtension.h"; sourceTree = "<group>"; };
+		610348151CB65CDB0088F9ED /* UIBarButtonItem+TTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TTExtension.m"; sourceTree = "<group>"; };
+		610348161CB65CDB0088F9ED /* UIView+TTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TTExtension.h"; sourceTree = "<group>"; };
+		610348171CB65CDB0088F9ED /* UIView+TTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTExtension.m"; sourceTree = "<group>"; };
+		610348191CB65CDB0088F9ED /* TTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBarController.h; sourceTree = "<group>"; };
+		6103481A1CB65CDB0088F9ED /* TTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBarController.m; sourceTree = "<group>"; };
+		6103481B1CB65CDB0088F9ED /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6103481C1CB65CDB0088F9ED /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6103481E1CB65CDB0088F9ED /* TTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBar.h; sourceTree = "<group>"; };
+		6103481F1CB65CDB0088F9ED /* TTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,24 +119,7 @@
 		610347A91CB5F01B0088F9ED /* 百思不得姐 */ = {
 			isa = PBXGroup;
 			children = (
-				610347AD1CB5F01B0088F9ED /* AppDelegate.h */,
-				610347AE1CB5F01B0088F9ED /* AppDelegate.m */,
-				610347DD1CB5F51C0088F9ED /* TTTabBarController.h */,
-				610347DE1CB5F51C0088F9ED /* TTTabBarController.m */,
-				610347F01CB640CA0088F9ED /* UIView+TTExtension.h */,
-				610347F11CB640CA0088F9ED /* UIView+TTExtension.m */,
-				610347EC1CB638E40088F9ED /* TTTabBar.h */,
-				610347ED1CB638E40088F9ED /* TTTabBar.m */,
-				610347E01CB635530088F9ED /* TTEssenceViewController.h */,
-				610347E11CB635530088F9ED /* TTEssenceViewController.m */,
-				610347E31CB635630088F9ED /* TTNewViewController.h */,
-				610347E41CB635630088F9ED /* TTNewViewController.m */,
-				610347E61CB635760088F9ED /* TTFriendTrendsViewController.h */,
-				610347E71CB635760088F9ED /* TTFriendTrendsViewController.m */,
-				610347E91CB635800088F9ED /* TTMeViewController.h */,
-				610347EA1CB635800088F9ED /* TTMeViewController.m */,
-				610347F41CB6568C0088F9ED /* UIBarButtonItem+TTExtension.h */,
-				610347F51CB6568C0088F9ED /* UIBarButtonItem+TTExtension.m */,
+				610347F71CB65CDB0088F9ED /* Classes */,
 				610347AA1CB5F01B0088F9ED /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -147,8 +130,6 @@
 			children = (
 				610347B61CB5F01B0088F9ED /* Assets.xcassets */,
 				610347BB1CB5F01B0088F9ED /* Info.plist */,
-				610347AB1CB5F01B0088F9ED /* main.m */,
-				610347F31CB642810088F9ED /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -169,6 +150,193 @@
 				610347D11CB5F01B0088F9ED /* Info.plist */,
 			);
 			path = "百思不得姐UITests";
+			sourceTree = "<group>";
+		};
+		610347F71CB65CDB0088F9ED /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				610347F81CB65CDB0088F9ED /* Essence-精华 */,
+				610347FE1CB65CDB0088F9ED /* FriendTrends-关注 */,
+				610348041CB65CDB0088F9ED /* Me-我 */,
+				6103480A1CB65CDB0088F9ED /* New-新帖 */,
+				610348101CB65CDB0088F9ED /* Other-其他 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		610347F81CB65CDB0088F9ED /* Essence-精华 */ = {
+			isa = PBXGroup;
+			children = (
+				610347F91CB65CDB0088F9ED /* Controller */,
+				610347FC1CB65CDB0088F9ED /* Model */,
+				610347FD1CB65CDB0088F9ED /* View */,
+			);
+			path = "Essence-精华";
+			sourceTree = "<group>";
+		};
+		610347F91CB65CDB0088F9ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				610347FA1CB65CDB0088F9ED /* TTEssenceViewController.h */,
+				610347FB1CB65CDB0088F9ED /* TTEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		610347FC1CB65CDB0088F9ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		610347FD1CB65CDB0088F9ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		610347FE1CB65CDB0088F9ED /* FriendTrends-关注 */ = {
+			isa = PBXGroup;
+			children = (
+				610347FF1CB65CDB0088F9ED /* Controller */,
+				610348021CB65CDB0088F9ED /* Model */,
+				610348031CB65CDB0088F9ED /* View */,
+			);
+			path = "FriendTrends-关注";
+			sourceTree = "<group>";
+		};
+		610347FF1CB65CDB0088F9ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				610348001CB65CDB0088F9ED /* TTFriendTrendsViewController.h */,
+				610348011CB65CDB0088F9ED /* TTFriendTrendsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		610348021CB65CDB0088F9ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		610348031CB65CDB0088F9ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		610348041CB65CDB0088F9ED /* Me-我 */ = {
+			isa = PBXGroup;
+			children = (
+				610348051CB65CDB0088F9ED /* Controller */,
+				610348081CB65CDB0088F9ED /* Model */,
+				610348091CB65CDB0088F9ED /* View */,
+			);
+			path = "Me-我";
+			sourceTree = "<group>";
+		};
+		610348051CB65CDB0088F9ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				610348061CB65CDB0088F9ED /* TTMeViewController.h */,
+				610348071CB65CDB0088F9ED /* TTMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		610348081CB65CDB0088F9ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		610348091CB65CDB0088F9ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6103480A1CB65CDB0088F9ED /* New-新帖 */ = {
+			isa = PBXGroup;
+			children = (
+				6103480B1CB65CDB0088F9ED /* Controller */,
+				6103480E1CB65CDB0088F9ED /* Model */,
+				6103480F1CB65CDB0088F9ED /* View */,
+			);
+			path = "New-新帖";
+			sourceTree = "<group>";
+		};
+		6103480B1CB65CDB0088F9ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6103480C1CB65CDB0088F9ED /* TTNewViewController.h */,
+				6103480D1CB65CDB0088F9ED /* TTNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6103480E1CB65CDB0088F9ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6103480F1CB65CDB0088F9ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		610348101CB65CDB0088F9ED /* Other-其他 */ = {
+			isa = PBXGroup;
+			children = (
+				610348111CB65CDB0088F9ED /* AppDelegate.h */,
+				610348121CB65CDB0088F9ED /* AppDelegate.m */,
+				610348131CB65CDB0088F9ED /* Category */,
+				610348181CB65CDB0088F9ED /* Controller */,
+				6103481B1CB65CDB0088F9ED /* main.m */,
+				6103481C1CB65CDB0088F9ED /* PrefixHeader.pch */,
+				6103481D1CB65CDB0088F9ED /* View */,
+			);
+			path = "Other-其他";
+			sourceTree = "<group>";
+		};
+		610348131CB65CDB0088F9ED /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				610348141CB65CDB0088F9ED /* UIBarButtonItem+TTExtension.h */,
+				610348151CB65CDB0088F9ED /* UIBarButtonItem+TTExtension.m */,
+				610348161CB65CDB0088F9ED /* UIView+TTExtension.h */,
+				610348171CB65CDB0088F9ED /* UIView+TTExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		610348181CB65CDB0088F9ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				610348191CB65CDB0088F9ED /* TTTabBarController.h */,
+				6103481A1CB65CDB0088F9ED /* TTTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6103481D1CB65CDB0088F9ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6103481E1CB65CDB0088F9ED /* TTTabBar.h */,
+				6103481F1CB65CDB0088F9ED /* TTTabBar.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,16 +467,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				610347DF1CB5F51C0088F9ED /* TTTabBarController.m in Sources */,
-				610347F21CB640CA0088F9ED /* UIView+TTExtension.m in Sources */,
-				610347EE1CB638E40088F9ED /* TTTabBar.m in Sources */,
-				610347E21CB635530088F9ED /* TTEssenceViewController.m in Sources */,
-				610347AF1CB5F01B0088F9ED /* AppDelegate.m in Sources */,
-				610347E51CB635630088F9ED /* TTNewViewController.m in Sources */,
-				610347E81CB635760088F9ED /* TTFriendTrendsViewController.m in Sources */,
-				610347AC1CB5F01B0088F9ED /* main.m in Sources */,
-				610347F61CB6568C0088F9ED /* UIBarButtonItem+TTExtension.m in Sources */,
-				610347EB1CB635800088F9ED /* TTMeViewController.m in Sources */,
+				610348261CB65CDB0088F9ED /* UIView+TTExtension.m in Sources */,
+				610348251CB65CDB0088F9ED /* UIBarButtonItem+TTExtension.m in Sources */,
+				610348221CB65CDB0088F9ED /* TTMeViewController.m in Sources */,
+				610348231CB65CDB0088F9ED /* TTNewViewController.m in Sources */,
+				610348211CB65CDB0088F9ED /* TTFriendTrendsViewController.m in Sources */,
+				610348201CB65CDB0088F9ED /* TTEssenceViewController.m in Sources */,
+				610348241CB65CDB0088F9ED /* AppDelegate.m in Sources */,
+				610348291CB65CDB0088F9ED /* TTTabBar.m in Sources */,
+				610348281CB65CDB0088F9ED /* main.m in Sources */,
+				610348271CB65CDB0088F9ED /* TTTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +600,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/Doracool/Desktop/News/代码/Joke/Demo/百思不得姐/百思不得姐/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/Doracool/Desktop/News/代码/Joke/Demo/百思不得姐/百思不得姐/Classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dianshi.-----";
@@ -446,7 +614,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/Doracool/Desktop/News/代码/Joke/Demo/百思不得姐/百思不得姐/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/Doracool/Desktop/News/代码/Joke/Demo/百思不得姐/百思不得姐/Classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dianshi.-----";

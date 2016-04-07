@@ -19,6 +19,7 @@
 		610347EB1CB635800088F9ED /* TTMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347EA1CB635800088F9ED /* TTMeViewController.m */; };
 		610347EE1CB638E40088F9ED /* TTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347ED1CB638E40088F9ED /* TTTabBar.m */; };
 		610347F21CB640CA0088F9ED /* UIView+TTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347F11CB640CA0088F9ED /* UIView+TTExtension.m */; };
+		610347F61CB6568C0088F9ED /* UIBarButtonItem+TTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347F51CB6568C0088F9ED /* UIBarButtonItem+TTExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		610347F01CB640CA0088F9ED /* UIView+TTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TTExtension.h"; sourceTree = "<group>"; };
 		610347F11CB640CA0088F9ED /* UIView+TTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTExtension.m"; sourceTree = "<group>"; };
 		610347F31CB642810088F9ED /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		610347F41CB6568C0088F9ED /* UIBarButtonItem+TTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+TTExtension.h"; sourceTree = "<group>"; };
+		610347F51CB6568C0088F9ED /* UIBarButtonItem+TTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TTExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				610347E71CB635760088F9ED /* TTFriendTrendsViewController.m */,
 				610347E91CB635800088F9ED /* TTMeViewController.h */,
 				610347EA1CB635800088F9ED /* TTMeViewController.m */,
+				610347F41CB6568C0088F9ED /* UIBarButtonItem+TTExtension.h */,
+				610347F51CB6568C0088F9ED /* UIBarButtonItem+TTExtension.m */,
 				610347AA1CB5F01B0088F9ED /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -302,6 +307,7 @@
 				610347E51CB635630088F9ED /* TTNewViewController.m in Sources */,
 				610347E81CB635760088F9ED /* TTFriendTrendsViewController.m in Sources */,
 				610347AC1CB5F01B0088F9ED /* main.m in Sources */,
+				610347F61CB6568C0088F9ED /* UIBarButtonItem+TTExtension.m in Sources */,
 				610347EB1CB635800088F9ED /* TTMeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

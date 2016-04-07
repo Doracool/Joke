@@ -18,6 +18,7 @@
 		610347E81CB635760088F9ED /* TTFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347E71CB635760088F9ED /* TTFriendTrendsViewController.m */; };
 		610347EB1CB635800088F9ED /* TTMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347EA1CB635800088F9ED /* TTMeViewController.m */; };
 		610347EE1CB638E40088F9ED /* TTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347ED1CB638E40088F9ED /* TTTabBar.m */; };
+		610347F21CB640CA0088F9ED /* UIView+TTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347F11CB640CA0088F9ED /* UIView+TTExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,9 @@
 		610347EA1CB635800088F9ED /* TTMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMeViewController.m; sourceTree = "<group>"; };
 		610347EC1CB638E40088F9ED /* TTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBar.h; sourceTree = "<group>"; };
 		610347ED1CB638E40088F9ED /* TTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBar.m; sourceTree = "<group>"; };
+		610347F01CB640CA0088F9ED /* UIView+TTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TTExtension.h"; sourceTree = "<group>"; };
+		610347F11CB640CA0088F9ED /* UIView+TTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTExtension.m"; sourceTree = "<group>"; };
+		610347F31CB642810088F9ED /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +119,11 @@
 				610347AD1CB5F01B0088F9ED /* AppDelegate.h */,
 				610347AE1CB5F01B0088F9ED /* AppDelegate.m */,
 				610347DD1CB5F51C0088F9ED /* TTTabBarController.h */,
+				610347DE1CB5F51C0088F9ED /* TTTabBarController.m */,
+				610347F01CB640CA0088F9ED /* UIView+TTExtension.h */,
+				610347F11CB640CA0088F9ED /* UIView+TTExtension.m */,
 				610347EC1CB638E40088F9ED /* TTTabBar.h */,
 				610347ED1CB638E40088F9ED /* TTTabBar.m */,
-				610347DE1CB5F51C0088F9ED /* TTTabBarController.m */,
 				610347E01CB635530088F9ED /* TTEssenceViewController.h */,
 				610347E11CB635530088F9ED /* TTEssenceViewController.m */,
 				610347E31CB635630088F9ED /* TTNewViewController.h */,
@@ -137,6 +143,7 @@
 				610347B61CB5F01B0088F9ED /* Assets.xcassets */,
 				610347BB1CB5F01B0088F9ED /* Info.plist */,
 				610347AB1CB5F01B0088F9ED /* main.m */,
+				610347F31CB642810088F9ED /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -288,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				610347DF1CB5F51C0088F9ED /* TTTabBarController.m in Sources */,
+				610347F21CB640CA0088F9ED /* UIView+TTExtension.m in Sources */,
 				610347EE1CB638E40088F9ED /* TTTabBar.m in Sources */,
 				610347E21CB635530088F9ED /* TTEssenceViewController.m in Sources */,
 				610347AF1CB5F01B0088F9ED /* AppDelegate.m in Sources */,
@@ -417,6 +425,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/Doracool/Desktop/News/代码/Joke/Demo/百思不得姐/百思不得姐/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dianshi.-----";
@@ -429,6 +439,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/Doracool/Desktop/News/代码/Joke/Demo/百思不得姐/百思不得姐/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dianshi.-----";

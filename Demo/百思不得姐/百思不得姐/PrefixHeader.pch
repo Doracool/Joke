@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐
+//
+//  Created by 李涛涛 on 16/4/7.
+//  Copyright © 2016年 李涛涛. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+TTExtension.h"
+
+#ifdef DEBUG
+#define TTLog(...) NSLog(__VA_ARGS__)
+#else
+#define TTLog(...)
+#endif
+
+#define TTLogFunc TTLog(@"%s", __func__)
+
+#endif

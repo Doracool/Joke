@@ -51,7 +51,10 @@
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:Image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
-    [self addChildViewController:vc];
+    
+    //添加一个导航控制器
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self addChildViewController:nav];
 }
 
 @end

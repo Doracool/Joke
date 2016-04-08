@@ -7,7 +7,7 @@
 //
 
 #import "TTFriendTrendsViewController.h"
-
+#import "TTRecommendViewController.h"
 @interface TTFriendTrendsViewController ()
 
 @end
@@ -25,7 +25,8 @@
 
 - (void)tagClick
 {
-    TTLogFunc;
+    TTRecommendViewController *vc = [[TTRecommendViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

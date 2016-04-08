@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A122B459519DA245C0DEE6D /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CEE48E19591C0F7D286427 /* libPods-百思不得姐.a */; };
 		610347B71CB5F01B0088F9ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610347B61CB5F01B0088F9ED /* Assets.xcassets */; };
 		610347C51CB5F01B0088F9ED /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347C41CB5F01B0088F9ED /* _____Tests.m */; };
 		610347D01CB5F01B0088F9ED /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 610347CF1CB5F01B0088F9ED /* _____UITests.m */; };
@@ -22,6 +23,8 @@
 		610348291CB65CDB0088F9ED /* TTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6103481F1CB65CDB0088F9ED /* TTTabBar.m */; };
 		6103482D1CB667990088F9ED /* TTFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6103482C1CB667990088F9ED /* TTFriendTrendsViewController.xib */; };
 		611A000C1CB73EFC006B2585 /* TTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 611A000B1CB73EFC006B2585 /* TTNavigationController.m */; };
+		611A000F1CB749DE006B2585 /* TTRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 611A000E1CB749DE006B2585 /* TTRecommendViewController.m */; };
+		611A00111CB749F8006B2585 /* TTRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 611A00101CB749F8006B2585 /* TTRecommendViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A3B1346F49CADAA9A6EEB8D /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
 		610347A71CB5F01B0088F9ED /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		610347B61CB5F01B0088F9ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		610347BB1CB5F01B0088F9ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +78,11 @@
 		6103482C1CB667990088F9ED /* TTFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTFriendTrendsViewController.xib; sourceTree = "<group>"; };
 		611A000A1CB73EFC006B2585 /* TTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigationController.h; sourceTree = "<group>"; };
 		611A000B1CB73EFC006B2585 /* TTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNavigationController.m; sourceTree = "<group>"; };
+		611A000D1CB749DE006B2585 /* TTRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRecommendViewController.h; sourceTree = "<group>"; };
+		611A000E1CB749DE006B2585 /* TTRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRecommendViewController.m; sourceTree = "<group>"; };
+		611A00101CB749F8006B2585 /* TTRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTRecommendViewController.xib; sourceTree = "<group>"; };
+		9BE5D8F3699F2DA46A7C7218 /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
+		F2CEE48E19591C0F7D286427 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A122B459519DA245C0DEE6D /* libPods-百思不得姐.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +118,8 @@
 				610347C31CB5F01B0088F9ED /* 百思不得姐Tests */,
 				610347CE1CB5F01B0088F9ED /* 百思不得姐UITests */,
 				610347A81CB5F01B0088F9ED /* Products */,
+				D84790909A434690AA0C2E92 /* Pods */,
+				9D5C284ED95B1C122B4F3F9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,6 +230,9 @@
 				610348001CB65CDB0088F9ED /* TTFriendTrendsViewController.h */,
 				610348011CB65CDB0088F9ED /* TTFriendTrendsViewController.m */,
 				6103482C1CB667990088F9ED /* TTFriendTrendsViewController.xib */,
+				611A000D1CB749DE006B2585 /* TTRecommendViewController.h */,
+				611A000E1CB749DE006B2585 /* TTRecommendViewController.m */,
+				611A00101CB749F8006B2585 /* TTRecommendViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -347,6 +362,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9D5C284ED95B1C122B4F3F9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2CEE48E19591C0F7D286427 /* libPods-百思不得姐.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D84790909A434690AA0C2E92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A3B1346F49CADAA9A6EEB8D /* Pods-百思不得姐.debug.xcconfig */,
+				9BE5D8F3699F2DA46A7C7218 /* Pods-百思不得姐.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -354,9 +386,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 610347D41CB5F01B0088F9ED /* Build configuration list for PBXNativeTarget "百思不得姐" */;
 			buildPhases = (
+				D4B3B017B7577B0278AB41AB /* Check Pods Manifest.lock */,
 				610347A31CB5F01B0088F9ED /* Sources */,
 				610347A41CB5F01B0088F9ED /* Frameworks */,
 				610347A51CB5F01B0088F9ED /* Resources */,
+				63C354BAFC4B6D1DD6AC74C0 /* Embed Pods Frameworks */,
+				F4A460162F6A3CAFDBF28063 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -450,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				611A00111CB749F8006B2585 /* TTRecommendViewController.xib in Resources */,
 				6103482D1CB667990088F9ED /* TTFriendTrendsViewController.xib in Resources */,
 				610347B71CB5F01B0088F9ED /* Assets.xcassets in Resources */,
 			);
@@ -471,6 +507,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		63C354BAFC4B6D1DD6AC74C0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4B3B017B7577B0278AB41AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4A460162F6A3CAFDBF28063 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		610347A31CB5F01B0088F9ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -483,6 +567,7 @@
 				611A000C1CB73EFC006B2585 /* TTNavigationController.m in Sources */,
 				610348211CB65CDB0088F9ED /* TTFriendTrendsViewController.m in Sources */,
 				610348201CB65CDB0088F9ED /* TTEssenceViewController.m in Sources */,
+				611A000F1CB749DE006B2585 /* TTRecommendViewController.m in Sources */,
 				610348241CB65CDB0088F9ED /* AppDelegate.m in Sources */,
 				610348291CB65CDB0088F9ED /* TTTabBar.m in Sources */,
 				610348281CB65CDB0088F9ED /* main.m in Sources */,
@@ -606,6 +691,7 @@
 		};
 		610347D51CB5F01B0088F9ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A3B1346F49CADAA9A6EEB8D /* Pods-百思不得姐.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -620,6 +706,7 @@
 		};
 		610347D61CB5F01B0088F9ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE5D8F3699F2DA46A7C7218 /* Pods-百思不得姐.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";

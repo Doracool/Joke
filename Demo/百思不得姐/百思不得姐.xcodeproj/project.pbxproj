@@ -20,6 +20,8 @@
 		610348271CB65CDB0088F9ED /* TTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6103481A1CB65CDB0088F9ED /* TTTabBarController.m */; };
 		610348281CB65CDB0088F9ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6103481B1CB65CDB0088F9ED /* main.m */; };
 		610348291CB65CDB0088F9ED /* TTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6103481F1CB65CDB0088F9ED /* TTTabBar.m */; };
+		6103482D1CB667990088F9ED /* TTFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6103482C1CB667990088F9ED /* TTFriendTrendsViewController.xib */; };
+		611A000C1CB73EFC006B2585 /* TTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 611A000B1CB73EFC006B2585 /* TTNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,9 @@
 		6103481C1CB65CDB0088F9ED /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		6103481E1CB65CDB0088F9ED /* TTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBar.h; sourceTree = "<group>"; };
 		6103481F1CB65CDB0088F9ED /* TTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBar.m; sourceTree = "<group>"; };
+		6103482C1CB667990088F9ED /* TTFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTFriendTrendsViewController.xib; sourceTree = "<group>"; };
+		611A000A1CB73EFC006B2585 /* TTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigationController.h; sourceTree = "<group>"; };
+		611A000B1CB73EFC006B2585 /* TTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +217,7 @@
 			children = (
 				610348001CB65CDB0088F9ED /* TTFriendTrendsViewController.h */,
 				610348011CB65CDB0088F9ED /* TTFriendTrendsViewController.m */,
+				6103482C1CB667990088F9ED /* TTFriendTrendsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -299,10 +305,10 @@
 		610348101CB65CDB0088F9ED /* Other-其他 */ = {
 			isa = PBXGroup;
 			children = (
-				610348111CB65CDB0088F9ED /* AppDelegate.h */,
-				610348121CB65CDB0088F9ED /* AppDelegate.m */,
 				610348131CB65CDB0088F9ED /* Category */,
 				610348181CB65CDB0088F9ED /* Controller */,
+				610348111CB65CDB0088F9ED /* AppDelegate.h */,
+				610348121CB65CDB0088F9ED /* AppDelegate.m */,
 				6103481B1CB65CDB0088F9ED /* main.m */,
 				6103481C1CB65CDB0088F9ED /* PrefixHeader.pch */,
 				6103481D1CB65CDB0088F9ED /* View */,
@@ -326,6 +332,8 @@
 			children = (
 				610348191CB65CDB0088F9ED /* TTTabBarController.h */,
 				6103481A1CB65CDB0088F9ED /* TTTabBarController.m */,
+				611A000A1CB73EFC006B2585 /* TTNavigationController.h */,
+				611A000B1CB73EFC006B2585 /* TTNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -442,6 +450,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6103482D1CB667990088F9ED /* TTFriendTrendsViewController.xib in Resources */,
 				610347B71CB5F01B0088F9ED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +480,7 @@
 				610348251CB65CDB0088F9ED /* UIBarButtonItem+TTExtension.m in Sources */,
 				610348221CB65CDB0088F9ED /* TTMeViewController.m in Sources */,
 				610348231CB65CDB0088F9ED /* TTNewViewController.m in Sources */,
+				611A000C1CB73EFC006B2585 /* TTNavigationController.m in Sources */,
 				610348211CB65CDB0088F9ED /* TTFriendTrendsViewController.m in Sources */,
 				610348201CB65CDB0088F9ED /* TTEssenceViewController.m in Sources */,
 				610348241CB65CDB0088F9ED /* AppDelegate.m in Sources */,

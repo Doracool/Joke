@@ -21,11 +21,20 @@
     
     //设置导航栏左右的按钮
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" hightImage:@"MainTagSubSubIconClick" Target:self action:@selector(tagClick)];
+    self.view.backgroundColor = [UIColor orangeColor];
 }
 
 - (void)tagClick
 {
     TTLogFunc;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor yellowColor];
+//    vc.view.alpha = 0;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

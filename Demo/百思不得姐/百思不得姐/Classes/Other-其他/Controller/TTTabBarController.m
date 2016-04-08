@@ -12,6 +12,7 @@
 #import "TTFriendTrendsViewController.h"
 #import "TTMeViewController.h"
 #import "TTTabBar.h"
+#import "TTNavigationController.h"
 @interface TTTabBarController ()
 
 @end
@@ -53,7 +54,7 @@
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     
     //添加一个导航控制器
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    TTNavigationController *nav = [[TTNavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
 }
 

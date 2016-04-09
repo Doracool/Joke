@@ -29,6 +29,9 @@
 		612B5F8B1CB891400095BEF5 /* TTRecommendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 612B5F891CB891400095BEF5 /* TTRecommendCategoryCell.m */; };
 		612B5F8C1CB891400095BEF5 /* TTRecommendCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 612B5F8A1CB891400095BEF5 /* TTRecommendCategoryCell.xib */; };
 		612B5F8F1CB8915C0095BEF5 /* TTRecommendCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 612B5F8E1CB8915C0095BEF5 /* TTRecommendCategory.m */; };
+		612B5F921CB8A6110095BEF5 /* TTRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 612B5F911CB8A6110095BEF5 /* TTRecommendUser.m */; };
+		612B5F961CB8A6330095BEF5 /* TTRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 612B5F941CB8A6330095BEF5 /* TTRecommendUserCell.m */; };
+		612B5F971CB8A6330095BEF5 /* TTRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 612B5F951CB8A6330095BEF5 /* TTRecommendUserCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,11 @@
 		612B5F8A1CB891400095BEF5 /* TTRecommendCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTRecommendCategoryCell.xib; sourceTree = "<group>"; };
 		612B5F8D1CB8915C0095BEF5 /* TTRecommendCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRecommendCategory.h; sourceTree = "<group>"; };
 		612B5F8E1CB8915C0095BEF5 /* TTRecommendCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRecommendCategory.m; sourceTree = "<group>"; };
+		612B5F901CB8A6110095BEF5 /* TTRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRecommendUser.h; sourceTree = "<group>"; };
+		612B5F911CB8A6110095BEF5 /* TTRecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRecommendUser.m; sourceTree = "<group>"; };
+		612B5F931CB8A6330095BEF5 /* TTRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRecommendUserCell.h; sourceTree = "<group>"; };
+		612B5F941CB8A6330095BEF5 /* TTRecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRecommendUserCell.m; sourceTree = "<group>"; };
+		612B5F951CB8A6330095BEF5 /* TTRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTRecommendUserCell.xib; sourceTree = "<group>"; };
 		9BE5D8F3699F2DA46A7C7218 /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
 		F2CEE48E19591C0F7D286427 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -252,6 +260,8 @@
 			children = (
 				612B5F8D1CB8915C0095BEF5 /* TTRecommendCategory.h */,
 				612B5F8E1CB8915C0095BEF5 /* TTRecommendCategory.m */,
+				612B5F901CB8A6110095BEF5 /* TTRecommendUser.h */,
+				612B5F911CB8A6110095BEF5 /* TTRecommendUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -262,6 +272,9 @@
 				612B5F881CB891400095BEF5 /* TTRecommendCategoryCell.h */,
 				612B5F891CB891400095BEF5 /* TTRecommendCategoryCell.m */,
 				612B5F8A1CB891400095BEF5 /* TTRecommendCategoryCell.xib */,
+				612B5F931CB8A6330095BEF5 /* TTRecommendUserCell.h */,
+				612B5F941CB8A6330095BEF5 /* TTRecommendUserCell.m */,
+				612B5F951CB8A6330095BEF5 /* TTRecommendUserCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -501,6 +514,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				612B5F971CB8A6330095BEF5 /* TTRecommendUserCell.xib in Resources */,
 				612B5F8C1CB891400095BEF5 /* TTRecommendCategoryCell.xib in Resources */,
 				611A00111CB749F8006B2585 /* TTRecommendViewController.xib in Resources */,
 				6103482D1CB667990088F9ED /* TTFriendTrendsViewController.xib in Resources */,
@@ -590,8 +604,10 @@
 				610348291CB65CDB0088F9ED /* TTTabBar.m in Sources */,
 				611A00181CB75210006B2585 /* Foundation+Log.m in Sources */,
 				610348281CB65CDB0088F9ED /* main.m in Sources */,
+				612B5F921CB8A6110095BEF5 /* TTRecommendUser.m in Sources */,
 				612B5F8B1CB891400095BEF5 /* TTRecommendCategoryCell.m in Sources */,
 				610348271CB65CDB0088F9ED /* TTTabBarController.m in Sources */,
+				612B5F961CB8A6330095BEF5 /* TTRecommendUserCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

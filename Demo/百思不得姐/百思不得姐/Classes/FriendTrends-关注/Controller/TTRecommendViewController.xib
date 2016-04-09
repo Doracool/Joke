@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TTRecommendViewController">
             <connections>
                 <outlet property="categoryTableView" destination="JiM-cr-ofq" id="thX-iA-WyC"/>
+                <outlet property="userTableView" destination="URF-d2-FcQ" id="11b-R3-HnI"/>
                 <outlet property="view" destination="iN0-l3-epB" id="guj-BN-lTm"/>
             </connections>
         </placeholder>
@@ -27,12 +28,24 @@
                         <outlet property="delegate" destination="-1" id="w3I-Ze-seu"/>
                     </connections>
                 </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="URF-d2-FcQ">
+                    <rect key="frame" x="70" y="0.0" width="530" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="itc-yI-Gm9"/>
+                        <outlet property="delegate" destination="-1" id="cFz-Qt-KjC"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="URF-d2-FcQ" firstAttribute="leading" secondItem="JiM-cr-ofq" secondAttribute="trailing" id="Efk-R7-uaH"/>
                 <constraint firstItem="JiM-cr-ofq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="I7d-VB-mgJ"/>
                 <constraint firstItem="JiM-cr-ofq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Uyu-fE-A5i"/>
+                <constraint firstAttribute="bottom" secondItem="URF-d2-FcQ" secondAttribute="bottom" id="ffc-sb-hYI"/>
                 <constraint firstAttribute="bottom" secondItem="JiM-cr-ofq" secondAttribute="bottom" id="odT-uW-DXR"/>
+                <constraint firstAttribute="trailing" secondItem="URF-d2-FcQ" secondAttribute="trailing" id="vBV-ew-U6l"/>
+                <constraint firstItem="URF-d2-FcQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="y3A-xX-bbk"/>
             </constraints>
         </view>
     </objects>

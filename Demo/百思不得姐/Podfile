@@ -8,6 +8,7 @@ pod 'SDWebImage', '~>3.7'
 pod 'SVProgressHUD'
 pod 'AFNetworking', '~> 3.0'
 pod 'MJExtension'
+pod 'MJRefresh'
 end
 
 target '百思不得姐Tests' do

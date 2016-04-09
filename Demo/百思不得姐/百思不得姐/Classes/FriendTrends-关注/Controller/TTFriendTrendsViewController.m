@@ -18,7 +18,6 @@
     [super viewDidLoad];
     //设置导航栏的文字
     self.navigationItem.title = @"我的关注";
-    
     //设置导航栏左边的按钮
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" hightImage:@"friendsRecommentIcon-click" Target:self action:@selector(tagClick)];
 }

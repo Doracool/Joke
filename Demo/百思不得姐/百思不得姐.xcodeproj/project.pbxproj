@@ -25,6 +25,10 @@
 		611A000C1CB73EFC006B2585 /* TTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 611A000B1CB73EFC006B2585 /* TTNavigationController.m */; };
 		611A000F1CB749DE006B2585 /* TTRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 611A000E1CB749DE006B2585 /* TTRecommendViewController.m */; };
 		611A00111CB749F8006B2585 /* TTRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 611A00101CB749F8006B2585 /* TTRecommendViewController.xib */; };
+		611A00181CB75210006B2585 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 611A00171CB75210006B2585 /* Foundation+Log.m */; };
+		612B5F8B1CB891400095BEF5 /* TTRecommendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 612B5F891CB891400095BEF5 /* TTRecommendCategoryCell.m */; };
+		612B5F8C1CB891400095BEF5 /* TTRecommendCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 612B5F8A1CB891400095BEF5 /* TTRecommendCategoryCell.xib */; };
+		612B5F8F1CB8915C0095BEF5 /* TTRecommendCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 612B5F8E1CB8915C0095BEF5 /* TTRecommendCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,12 @@
 		611A000D1CB749DE006B2585 /* TTRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRecommendViewController.h; sourceTree = "<group>"; };
 		611A000E1CB749DE006B2585 /* TTRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRecommendViewController.m; sourceTree = "<group>"; };
 		611A00101CB749F8006B2585 /* TTRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTRecommendViewController.xib; sourceTree = "<group>"; };
+		611A00171CB75210006B2585 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		612B5F881CB891400095BEF5 /* TTRecommendCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRecommendCategoryCell.h; sourceTree = "<group>"; };
+		612B5F891CB891400095BEF5 /* TTRecommendCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRecommendCategoryCell.m; sourceTree = "<group>"; };
+		612B5F8A1CB891400095BEF5 /* TTRecommendCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTRecommendCategoryCell.xib; sourceTree = "<group>"; };
+		612B5F8D1CB8915C0095BEF5 /* TTRecommendCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRecommendCategory.h; sourceTree = "<group>"; };
+		612B5F8E1CB8915C0095BEF5 /* TTRecommendCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRecommendCategory.m; sourceTree = "<group>"; };
 		9BE5D8F3699F2DA46A7C7218 /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
 		F2CEE48E19591C0F7D286427 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -240,6 +250,8 @@
 		610348021CB65CDB0088F9ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				612B5F8D1CB8915C0095BEF5 /* TTRecommendCategory.h */,
+				612B5F8E1CB8915C0095BEF5 /* TTRecommendCategory.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +259,9 @@
 		610348031CB65CDB0088F9ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				612B5F881CB891400095BEF5 /* TTRecommendCategoryCell.h */,
+				612B5F891CB891400095BEF5 /* TTRecommendCategoryCell.m */,
+				612B5F8A1CB891400095BEF5 /* TTRecommendCategoryCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,6 +342,7 @@
 				6103481B1CB65CDB0088F9ED /* main.m */,
 				6103481C1CB65CDB0088F9ED /* PrefixHeader.pch */,
 				6103481D1CB65CDB0088F9ED /* View */,
+				611A00171CB75210006B2585 /* Foundation+Log.m */,
 			);
 			path = "Other-其他";
 			sourceTree = "<group>";
@@ -485,6 +501,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				612B5F8C1CB891400095BEF5 /* TTRecommendCategoryCell.xib in Resources */,
 				611A00111CB749F8006B2585 /* TTRecommendViewController.xib in Resources */,
 				6103482D1CB667990088F9ED /* TTFriendTrendsViewController.xib in Resources */,
 				610347B71CB5F01B0088F9ED /* Assets.xcassets in Resources */,
@@ -562,6 +579,7 @@
 			files = (
 				610348261CB65CDB0088F9ED /* UIView+TTExtension.m in Sources */,
 				610348251CB65CDB0088F9ED /* UIBarButtonItem+TTExtension.m in Sources */,
+				612B5F8F1CB8915C0095BEF5 /* TTRecommendCategory.m in Sources */,
 				610348221CB65CDB0088F9ED /* TTMeViewController.m in Sources */,
 				610348231CB65CDB0088F9ED /* TTNewViewController.m in Sources */,
 				611A000C1CB73EFC006B2585 /* TTNavigationController.m in Sources */,
@@ -570,7 +588,9 @@
 				611A000F1CB749DE006B2585 /* TTRecommendViewController.m in Sources */,
 				610348241CB65CDB0088F9ED /* AppDelegate.m in Sources */,
 				610348291CB65CDB0088F9ED /* TTTabBar.m in Sources */,
+				611A00181CB75210006B2585 /* Foundation+Log.m in Sources */,
 				610348281CB65CDB0088F9ED /* main.m in Sources */,
+				612B5F8B1CB891400095BEF5 /* TTRecommendCategoryCell.m in Sources */,
 				610348271CB65CDB0088F9ED /* TTTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,7 @@
 //
 
 #import "TTEssenceViewController.h"
-
+#import "TTRecommendTagsViewController.h"
 @interface TTEssenceViewController ()
 
 @end
@@ -26,7 +26,8 @@
 
 - (void)tagClick
 {
-    TTLogFunc;
+    TTRecommendTagsViewController *tags = [[TTRecommendTagsViewController alloc] init];
+    [self.navigationController pushViewController:tags animated:YES];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

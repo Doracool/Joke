@@ -30,12 +30,6 @@
     [self.navigationController pushViewController:tags animated:YES];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    UIViewController *vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor yellowColor];
-//    vc.view.alpha = 0;
-    [self.navigationController pushViewController:vc animated:YES];
-}
+
 
 @end

@@ -22,6 +22,9 @@
 		610348281CB65CDB0088F9ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6103481B1CB65CDB0088F9ED /* main.m */; };
 		610348291CB65CDB0088F9ED /* TTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6103481F1CB65CDB0088F9ED /* TTTabBar.m */; };
 		6103482D1CB667990088F9ED /* TTFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6103482C1CB667990088F9ED /* TTFriendTrendsViewController.xib */; };
+		6107F5451CBC926F00DA501D /* TTVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6107F5441CBC926F00DA501D /* TTVerticalButton.m */; };
+		610BC75C1CBB2F92000D3EAA /* TTLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610BC75B1CBB2F92000D3EAA /* TTLoginRegisterViewController.m */; };
+		610BC75E1CBB2FA2000D3EAA /* TTLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 610BC75D1CBB2FA2000D3EAA /* TTLoginRegisterViewController.xib */; };
 		611A000C1CB73EFC006B2585 /* TTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 611A000B1CB73EFC006B2585 /* TTNavigationController.m */; };
 		611A000F1CB749DE006B2585 /* TTRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 611A000E1CB749DE006B2585 /* TTRecommendViewController.m */; };
 		611A00111CB749F8006B2585 /* TTRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 611A00101CB749F8006B2585 /* TTRecommendViewController.xib */; };
@@ -87,6 +90,11 @@
 		6103481E1CB65CDB0088F9ED /* TTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBar.h; sourceTree = "<group>"; };
 		6103481F1CB65CDB0088F9ED /* TTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTabBar.m; sourceTree = "<group>"; };
 		6103482C1CB667990088F9ED /* TTFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTFriendTrendsViewController.xib; sourceTree = "<group>"; };
+		6107F5431CBC926F00DA501D /* TTVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVerticalButton.h; sourceTree = "<group>"; };
+		6107F5441CBC926F00DA501D /* TTVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVerticalButton.m; sourceTree = "<group>"; };
+		610BC75A1CBB2F92000D3EAA /* TTLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLoginRegisterViewController.h; sourceTree = "<group>"; };
+		610BC75B1CBB2F92000D3EAA /* TTLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLoginRegisterViewController.m; sourceTree = "<group>"; };
+		610BC75D1CBB2FA2000D3EAA /* TTLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		611A000A1CB73EFC006B2585 /* TTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigationController.h; sourceTree = "<group>"; };
 		611A000B1CB73EFC006B2585 /* TTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNavigationController.m; sourceTree = "<group>"; };
 		611A000D1CB749DE006B2585 /* TTRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRecommendViewController.h; sourceTree = "<group>"; };
@@ -269,6 +277,9 @@
 				611A000D1CB749DE006B2585 /* TTRecommendViewController.h */,
 				611A000E1CB749DE006B2585 /* TTRecommendViewController.m */,
 				611A00101CB749F8006B2585 /* TTRecommendViewController.xib */,
+				610BC75A1CBB2F92000D3EAA /* TTLoginRegisterViewController.h */,
+				610BC75B1CBB2F92000D3EAA /* TTLoginRegisterViewController.m */,
+				610BC75D1CBB2FA2000D3EAA /* TTLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -293,6 +304,8 @@
 				612B5F931CB8A6330095BEF5 /* TTRecommendUserCell.h */,
 				612B5F941CB8A6330095BEF5 /* TTRecommendUserCell.m */,
 				612B5F951CB8A6330095BEF5 /* TTRecommendUserCell.xib */,
+				6107F5431CBC926F00DA501D /* TTVerticalButton.h */,
+				6107F5441CBC926F00DA501D /* TTVerticalButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -538,6 +551,7 @@
 				611A00111CB749F8006B2585 /* TTRecommendViewController.xib in Resources */,
 				6103482D1CB667990088F9ED /* TTFriendTrendsViewController.xib in Resources */,
 				610347B71CB5F01B0088F9ED /* Assets.xcassets in Resources */,
+				610BC75E1CBB2FA2000D3EAA /* TTLoginRegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +634,7 @@
 				610348211CB65CDB0088F9ED /* TTFriendTrendsViewController.m in Sources */,
 				610348201CB65CDB0088F9ED /* TTEssenceViewController.m in Sources */,
 				611A000F1CB749DE006B2585 /* TTRecommendViewController.m in Sources */,
+				610BC75C1CBB2F92000D3EAA /* TTLoginRegisterViewController.m in Sources */,
 				612B5F9E1CB8FCEF0095BEF5 /* TTRecommendTagCell.m in Sources */,
 				610348241CB65CDB0088F9ED /* AppDelegate.m in Sources */,
 				610348291CB65CDB0088F9ED /* TTTabBar.m in Sources */,
@@ -630,6 +645,7 @@
 				612B5F8B1CB891400095BEF5 /* TTRecommendCategoryCell.m in Sources */,
 				610348271CB65CDB0088F9ED /* TTTabBarController.m in Sources */,
 				612B5F961CB8A6330095BEF5 /* TTRecommendUserCell.m in Sources */,
+				6107F5451CBC926F00DA501D /* TTVerticalButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

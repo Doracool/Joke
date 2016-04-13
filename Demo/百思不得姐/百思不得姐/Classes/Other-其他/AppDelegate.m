@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TTTabBarController.h"
+#import "TTPushGuideView.h"
 @interface AppDelegate ()
 
 @end
@@ -19,6 +20,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     self.window.rootViewController = [[TTTabBarController alloc] init];
+    
+    //显示推送引导页
+    [TTPushGuideView show];
     return YES;
 }
 

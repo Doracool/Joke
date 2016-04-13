@@ -40,6 +40,8 @@
 		612B5F9F1CB8FCEF0095BEF5 /* TTRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 612B5F9D1CB8FCEF0095BEF5 /* TTRecommendTagCell.xib */; };
 		612B5FA21CB900C30095BEF5 /* TTRecommendTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 612B5FA11CB900C30095BEF5 /* TTRecommendTagsViewController.m */; };
 		614CA01D1CBDE18000E42494 /* TTTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CA01C1CBDE18000E42494 /* TTTextFiled.m */; };
+		614CA0201CBE31F300E42494 /* TTPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CA01F1CBE31F300E42494 /* TTPushGuideView.m */; };
+		614CA0221CBE320300E42494 /* TTPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 614CA0211CBE320300E42494 /* TTPushGuideView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,9 @@
 		612B5FA11CB900C30095BEF5 /* TTRecommendTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRecommendTagsViewController.m; sourceTree = "<group>"; };
 		614CA01B1CBDE18000E42494 /* TTTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextFiled.h; sourceTree = "<group>"; };
 		614CA01C1CBDE18000E42494 /* TTTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTextFiled.m; sourceTree = "<group>"; };
+		614CA01E1CBE31F300E42494 /* TTPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPushGuideView.h; sourceTree = "<group>"; };
+		614CA01F1CBE31F300E42494 /* TTPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPushGuideView.m; sourceTree = "<group>"; };
+		614CA0211CBE320300E42494 /* TTPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTPushGuideView.xib; sourceTree = "<group>"; };
 		9BE5D8F3699F2DA46A7C7218 /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
 		F2CEE48E19591C0F7D286427 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -423,6 +428,9 @@
 			children = (
 				6103481E1CB65CDB0088F9ED /* TTTabBar.h */,
 				6103481F1CB65CDB0088F9ED /* TTTabBar.m */,
+				614CA01E1CBE31F300E42494 /* TTPushGuideView.h */,
+				614CA01F1CBE31F300E42494 /* TTPushGuideView.m */,
+				614CA0211CBE320300E42494 /* TTPushGuideView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -555,6 +563,7 @@
 				612B5F8C1CB891400095BEF5 /* TTRecommendCategoryCell.xib in Resources */,
 				611A00111CB749F8006B2585 /* TTRecommendViewController.xib in Resources */,
 				6103482D1CB667990088F9ED /* TTFriendTrendsViewController.xib in Resources */,
+				614CA0221CBE320300E42494 /* TTPushGuideView.xib in Resources */,
 				610347B71CB5F01B0088F9ED /* Assets.xcassets in Resources */,
 				610BC75E1CBB2FA2000D3EAA /* TTLoginRegisterViewController.xib in Resources */,
 			);
@@ -642,6 +651,7 @@
 				611A000F1CB749DE006B2585 /* TTRecommendViewController.m in Sources */,
 				610BC75C1CBB2F92000D3EAA /* TTLoginRegisterViewController.m in Sources */,
 				612B5F9E1CB8FCEF0095BEF5 /* TTRecommendTagCell.m in Sources */,
+				614CA0201CBE31F300E42494 /* TTPushGuideView.m in Sources */,
 				610348241CB65CDB0088F9ED /* AppDelegate.m in Sources */,
 				610348291CB65CDB0088F9ED /* TTTabBar.m in Sources */,
 				611A00181CB75210006B2585 /* Foundation+Log.m in Sources */,

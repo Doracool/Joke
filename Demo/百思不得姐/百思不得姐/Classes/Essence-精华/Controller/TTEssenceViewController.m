@@ -13,6 +13,8 @@
 @property (nonatomic, weak) UIView *indicatorView;
 /** 当前选中的按钮 */
 @property (nonatomic, weak) UIButton *selectedButton;
+/** 顶部的所有标签 */
+@property (nonatomic, weak) UIView *titlesView;
 @end
 
 @implementation TTEssenceViewController
@@ -24,6 +26,9 @@
     [self setupNav];
     //设置顶部的标签栏
     [self setupTitlesView];
+    
+    //底部的scrollview
+    [self setupContentView];
 }
 
 - (void)setupTitlesView
@@ -35,6 +40,7 @@
     titlesView.height = 35;
     titlesView.y = 64;
     [self.view addSubview:titlesView];
+    self.titlesView = titlesView;
     
     //底部的红色指示器
     UIView *indicatorView = [[UIView alloc] init];
@@ -84,6 +90,24 @@
         self.indicatorView.width = button.titleLabel.width;
         self.indicatorView.centerX = button.centerX;
     }];
+}
+
+/**
+ *  底部的scrollView
+ */
+- (void)setupContentView
+{
+    //不要自动调整inset
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    UIScrollView *contentView = [[UIScrollView alloc] init];
+    contentView.frame = self.view.bounds;
+    //设置内边距
+    CGFloat bottom = self.tabBarController.tabBar.height;
+    CGFloat top = CGRectGetMaxY(self.titlesView.frame);
+    contentView.contentInset = UIEdgeInsetsMake(top, 0, bottom, 0);
+    [self.view insertSubview:contentView atIndex:0];
+
 }
 
 /**

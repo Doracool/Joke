@@ -39,6 +39,7 @@
 		612B5F9E1CB8FCEF0095BEF5 /* TTRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 612B5F9C1CB8FCEF0095BEF5 /* TTRecommendTagCell.m */; };
 		612B5F9F1CB8FCEF0095BEF5 /* TTRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 612B5F9D1CB8FCEF0095BEF5 /* TTRecommendTagCell.xib */; };
 		612B5FA21CB900C30095BEF5 /* TTRecommendTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 612B5FA11CB900C30095BEF5 /* TTRecommendTagsViewController.m */; };
+		614CA01D1CBDE18000E42494 /* TTTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CA01C1CBDE18000E42494 /* TTTextFiled.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,8 @@
 		612B5F9D1CB8FCEF0095BEF5 /* TTRecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTRecommendTagCell.xib; sourceTree = "<group>"; };
 		612B5FA01CB900C30095BEF5 /* TTRecommendTagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRecommendTagsViewController.h; sourceTree = "<group>"; };
 		612B5FA11CB900C30095BEF5 /* TTRecommendTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRecommendTagsViewController.m; sourceTree = "<group>"; };
+		614CA01B1CBDE18000E42494 /* TTTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextFiled.h; sourceTree = "<group>"; };
+		614CA01C1CBDE18000E42494 /* TTTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTextFiled.m; sourceTree = "<group>"; };
 		9BE5D8F3699F2DA46A7C7218 /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
 		F2CEE48E19591C0F7D286427 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -306,6 +309,8 @@
 				612B5F951CB8A6330095BEF5 /* TTRecommendUserCell.xib */,
 				6107F5431CBC926F00DA501D /* TTVerticalButton.h */,
 				6107F5441CBC926F00DA501D /* TTVerticalButton.m */,
+				614CA01B1CBDE18000E42494 /* TTTextFiled.h */,
+				614CA01C1CBDE18000E42494 /* TTTextFiled.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -627,6 +632,7 @@
 				610348261CB65CDB0088F9ED /* UIView+TTExtension.m in Sources */,
 				610348251CB65CDB0088F9ED /* UIBarButtonItem+TTExtension.m in Sources */,
 				612B5F8F1CB8915C0095BEF5 /* TTRecommendCategory.m in Sources */,
+				614CA01D1CBDE18000E42494 /* TTTextFiled.m in Sources */,
 				612B5F9A1CB8FCCD0095BEF5 /* TTRecommendTag.m in Sources */,
 				610348221CB65CDB0088F9ED /* TTMeViewController.m in Sources */,
 				610348231CB65CDB0088F9ED /* TTNewViewController.m in Sources */,

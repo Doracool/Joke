@@ -109,14 +109,14 @@
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_rgister_textfield_bg" translatesAutoresizingMaskIntoConstraints="NO" id="te1-ie-0WO">
                                     <rect key="frame" x="0.0" y="0.0" width="266" height="92"/>
                                 </imageView>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d9s-Sy-Gni">
-                                    <rect key="frame" x="5" y="0.0" width="256" height="46"/>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d9s-Sy-Gni" customClass="TTTextFiled">
+                                    <rect key="frame" x="10" y="0.0" width="246" height="46"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cpU-LW-esC">
-                                    <rect key="frame" x="5" y="46" width="256" height="46"/>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cpU-LW-esC" customClass="TTTextFiled">
+                                    <rect key="frame" x="10" y="46" width="246" height="46"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
@@ -125,9 +125,9 @@
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="te1-ie-0WO" secondAttribute="trailing" id="0NO-pH-iS5"/>
                                 <constraint firstItem="cpU-LW-esC" firstAttribute="leading" secondItem="d9s-Sy-Gni" secondAttribute="leading" id="6nt-ib-txA"/>
-                                <constraint firstAttribute="trailing" secondItem="d9s-Sy-Gni" secondAttribute="trailing" constant="5" id="AHD-qa-bMI"/>
+                                <constraint firstAttribute="trailing" secondItem="d9s-Sy-Gni" secondAttribute="trailing" constant="10" id="AHD-qa-bMI"/>
                                 <constraint firstAttribute="bottom" secondItem="te1-ie-0WO" secondAttribute="bottom" id="Bdw-Fi-Gh2"/>
-                                <constraint firstItem="d9s-Sy-Gni" firstAttribute="leading" secondItem="V15-Mi-P5e" secondAttribute="leading" constant="5" id="Esv-ee-5vB"/>
+                                <constraint firstItem="d9s-Sy-Gni" firstAttribute="leading" secondItem="V15-Mi-P5e" secondAttribute="leading" constant="10" id="Esv-ee-5vB"/>
                                 <constraint firstItem="te1-ie-0WO" firstAttribute="top" secondItem="V15-Mi-P5e" secondAttribute="top" id="HwU-GI-8iW"/>
                                 <constraint firstAttribute="width" constant="266" id="Ize-bo-JHI"/>
                                 <constraint firstItem="d9s-Sy-Gni" firstAttribute="top" secondItem="V15-Mi-P5e" secondAttribute="top" id="NQC-ze-SNu"/>
@@ -139,12 +139,20 @@
                                 <constraint firstAttribute="height" constant="92" id="wR5-da-o7I"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfN-Rs-U3g">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfN-Rs-U3g">
                             <rect key="frame" x="167" y="127" width="266" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
                             <state key="normal" title="登录" backgroundImage="login_register_button">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <state key="highlighted" backgroundImage="login_register_button_click"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVG-so-hUn">
                             <rect key="frame" x="365" y="182" width="68" height="30"/>

@@ -138,17 +138,26 @@
                             <constraint firstAttribute="trailing" secondItem="wxc-i2-REu" secondAttribute="trailing" id="yhI-cU-TLC"/>
                         </constraints>
                     </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile_AddV_authen" translatesAutoresizingMaskIntoConstraints="NO" id="X8S-f2-OCe">
+                        <rect key="frame" x="36" y="36" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="HmN-Bs-81W"/>
+                            <constraint firstAttribute="width" constant="14" id="hie-K0-8vc"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="nrl-3M-BG1" firstAttribute="top" secondItem="jND-HS-UNY" secondAttribute="top" id="BM4-1r-2ce"/>
                     <constraint firstItem="z1T-4L-pXa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KzF-7u-Nac"/>
                     <constraint firstItem="FhW-ri-9ra" firstAttribute="bottom" secondItem="wpu-2A-lcE" secondAttribute="bottom" id="N72-jk-o55"/>
+                    <constraint firstItem="X8S-f2-OCe" firstAttribute="bottom" secondItem="wpu-2A-lcE" secondAttribute="bottom" constant="5" id="Qkn-e4-yBx"/>
                     <constraint firstItem="jND-HS-UNY" firstAttribute="top" secondItem="wpu-2A-lcE" secondAttribute="top" id="T9v-uF-vdf"/>
                     <constraint firstItem="wpu-2A-lcE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="TBk-hG-D2X"/>
                     <constraint firstAttribute="trailing" secondItem="nrl-3M-BG1" secondAttribute="trailing" constant="10" id="Uak-R2-cRN"/>
                     <constraint firstItem="jND-HS-UNY" firstAttribute="leading" secondItem="wpu-2A-lcE" secondAttribute="trailing" constant="10" id="d6g-gv-ilC"/>
                     <constraint firstItem="wpu-2A-lcE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hbW-FL-eVH"/>
                     <constraint firstItem="FhW-ri-9ra" firstAttribute="leading" secondItem="jND-HS-UNY" secondAttribute="leading" id="htE-Ob-OtL"/>
+                    <constraint firstItem="X8S-f2-OCe" firstAttribute="trailing" secondItem="wpu-2A-lcE" secondAttribute="trailing" constant="5" id="lvn-pA-E9A"/>
                     <constraint firstAttribute="trailing" secondItem="z1T-4L-pXa" secondAttribute="trailing" id="oQq-IJ-dyk"/>
                     <constraint firstAttribute="bottom" secondItem="z1T-4L-pXa" secondAttribute="bottom" id="xM0-dk-J4t"/>
                 </constraints>
@@ -161,11 +170,13 @@
                 <outlet property="nameLabel" destination="jND-HS-UNY" id="c8j-A7-1tv"/>
                 <outlet property="profileImageView" destination="wpu-2A-lcE" id="eVl-AC-XZG"/>
                 <outlet property="shareButton" destination="Joy-j4-Rb0" id="ejZ-iE-558"/>
+                <outlet property="sinaVView" destination="X8S-f2-OCe" id="iLn-o8-mDF"/>
             </connections>
             <point key="canvasLocation" x="324.5" y="543.5"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Profile_AddV_authen" width="14" height="14"/>
         <image name="cell-button-line" width="1" height="29"/>
         <image name="cell-content-line" width="299" height="1"/>
         <image name="cellFollowClickIcon" width="19" height="20"/>

@@ -24,6 +24,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
 /** 评论 */
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
+/** 是否新浪加V */
+@property (weak, nonatomic) IBOutlet UIImageView *sinaVView;
 @end
 
 @implementation TTTopicCell
@@ -40,6 +42,8 @@
 {
     _topic = topic;
     
+    //新浪加V
+    self.sinaVView.hidden = !topic.isSina_v;
     //设置其他控件
     [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     self.nameLabel.text = topic.name;

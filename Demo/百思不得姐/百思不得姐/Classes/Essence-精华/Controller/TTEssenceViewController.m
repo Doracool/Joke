@@ -8,11 +8,7 @@
 
 #import "TTEssenceViewController.h"
 #import "TTRecommendTagsViewController.h"
-#import "TTAllViewController.h"
-#import "TTVideoViewController.h"
-#import "TTVoiceViewController.h"
-#import "TTPictureViewController.h"
-#import "TTWordViewController.h"
+#import "TTTopicViewController.h"
 @interface TTEssenceViewController ()<UIScrollViewDelegate>
 /** 标签栏底部的红色指示器 */
 @property (nonatomic, weak) UIView *indicatorView;
@@ -47,15 +43,24 @@
  */
 - (void)setupChildVces
 {
-    TTWordViewController *word = [[TTWordViewController alloc] init];
+    TTTopicViewController *word = [[TTTopicViewController alloc] init];
+    word.type = TTTopicTypeWord;
     [self addChildViewController:word];
-    TTAllViewController *all = [[TTAllViewController alloc] init];
+    
+    TTTopicViewController *all = [[TTTopicViewController alloc] init];
+    all.type = TTTopicTypeAll;
     [self addChildViewController:all];
-    TTVideoViewController *video = [[TTVideoViewController alloc] init];
+    
+    TTTopicViewController *video = [[TTTopicViewController alloc] init];
+    video.type = TTTopicTypeVideo;
     [self addChildViewController:video];
-    TTVoiceViewController *voice = [[TTVoiceViewController alloc] init];
+    
+    TTTopicViewController *voice = [[TTTopicViewController alloc] init];
+    voice.type = TTTopicTypeVoice;
     [self addChildViewController:voice];
-    TTPictureViewController *picture = [[TTPictureViewController alloc] init];
+    
+    TTTopicViewController *picture = [[TTTopicViewController alloc] init];
+    picture.type = TTTopicTypePicture;
     [self addChildViewController:picture];
 }
 

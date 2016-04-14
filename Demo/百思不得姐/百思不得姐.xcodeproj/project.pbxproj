@@ -38,20 +38,16 @@
 		612B5F9A1CB8FCCD0095BEF5 /* TTRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 612B5F991CB8FCCD0095BEF5 /* TTRecommendTag.m */; };
 		612B5F9E1CB8FCEF0095BEF5 /* TTRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 612B5F9C1CB8FCEF0095BEF5 /* TTRecommendTagCell.m */; };
 		612B5F9F1CB8FCEF0095BEF5 /* TTRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 612B5F9D1CB8FCEF0095BEF5 /* TTRecommendTagCell.xib */; };
-		612B5FA21CB900C30095BEF5 /* TTRecommendTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 612B5FA11CB900C30095BEF5 /* TTRecommendTagsViewController.m */; };
 		614CA01D1CBDE18000E42494 /* TTTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CA01C1CBDE18000E42494 /* TTTextFiled.m */; };
 		614CA0201CBE31F300E42494 /* TTPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CA01F1CBE31F300E42494 /* TTPushGuideView.m */; };
 		614CA0221CBE320300E42494 /* TTPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 614CA0211CBE320300E42494 /* TTPushGuideView.xib */; };
-		614CA0251CBE4BA800E42494 /* TTAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CA0241CBE4BA800E42494 /* TTAllViewController.m */; };
-		614CA0281CBE4BBB00E42494 /* TTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CA0271CBE4BBB00E42494 /* TTVideoViewController.m */; };
-		614CA02B1CBE4BD200E42494 /* TTVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CA02A1CBE4BD200E42494 /* TTVoiceViewController.m */; };
-		614CA02E1CBE4BE900E42494 /* TTPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CA02D1CBE4BE900E42494 /* TTPictureViewController.m */; };
-		614CA0311CBE4BFA00E42494 /* TTWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CA0301CBE4BFA00E42494 /* TTWordViewController.m */; };
 		614CAEC61CBF32A40024BCF6 /* TTTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CAEC51CBF32A40024BCF6 /* TTTopic.m */; };
 		614CAECD1CBF3D940024BCF6 /* TTConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CAECC1CBF3D940024BCF6 /* TTConst.m */; };
 		614CAED11CBF42A50024BCF6 /* TTTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CAECF1CBF42A50024BCF6 /* TTTopicCell.m */; };
 		614CAED21CBF42A50024BCF6 /* TTTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 614CAED01CBF42A50024BCF6 /* TTTopicCell.xib */; };
 		614CAED51CBF78CC0024BCF6 /* NSDate+TTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CAED41CBF78CC0024BCF6 /* NSDate+TTExtension.m */; };
+		614CAED81CBF8F610024BCF6 /* TTTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CAED71CBF8F610024BCF6 /* TTTopicViewController.m */; };
+		614CAEDB1CBF94520024BCF6 /* TTRecommendTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CAEDA1CBF94520024BCF6 /* TTRecommendTagsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,23 +125,11 @@
 		612B5F9B1CB8FCEF0095BEF5 /* TTRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRecommendTagCell.h; sourceTree = "<group>"; };
 		612B5F9C1CB8FCEF0095BEF5 /* TTRecommendTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRecommendTagCell.m; sourceTree = "<group>"; };
 		612B5F9D1CB8FCEF0095BEF5 /* TTRecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTRecommendTagCell.xib; sourceTree = "<group>"; };
-		612B5FA01CB900C30095BEF5 /* TTRecommendTagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRecommendTagsViewController.h; sourceTree = "<group>"; };
-		612B5FA11CB900C30095BEF5 /* TTRecommendTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRecommendTagsViewController.m; sourceTree = "<group>"; };
 		614CA01B1CBDE18000E42494 /* TTTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextFiled.h; sourceTree = "<group>"; };
 		614CA01C1CBDE18000E42494 /* TTTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTextFiled.m; sourceTree = "<group>"; };
 		614CA01E1CBE31F300E42494 /* TTPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPushGuideView.h; sourceTree = "<group>"; };
 		614CA01F1CBE31F300E42494 /* TTPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPushGuideView.m; sourceTree = "<group>"; };
 		614CA0211CBE320300E42494 /* TTPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTPushGuideView.xib; sourceTree = "<group>"; };
-		614CA0231CBE4BA800E42494 /* TTAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAllViewController.h; sourceTree = "<group>"; };
-		614CA0241CBE4BA800E42494 /* TTAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAllViewController.m; sourceTree = "<group>"; };
-		614CA0261CBE4BBB00E42494 /* TTVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVideoViewController.h; sourceTree = "<group>"; };
-		614CA0271CBE4BBB00E42494 /* TTVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVideoViewController.m; sourceTree = "<group>"; };
-		614CA0291CBE4BD200E42494 /* TTVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVoiceViewController.h; sourceTree = "<group>"; };
-		614CA02A1CBE4BD200E42494 /* TTVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVoiceViewController.m; sourceTree = "<group>"; };
-		614CA02C1CBE4BE900E42494 /* TTPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPictureViewController.h; sourceTree = "<group>"; };
-		614CA02D1CBE4BE900E42494 /* TTPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPictureViewController.m; sourceTree = "<group>"; };
-		614CA02F1CBE4BFA00E42494 /* TTWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTWordViewController.h; sourceTree = "<group>"; };
-		614CA0301CBE4BFA00E42494 /* TTWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTWordViewController.m; sourceTree = "<group>"; };
 		614CAEC41CBF32A40024BCF6 /* TTTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTopic.h; sourceTree = "<group>"; };
 		614CAEC51CBF32A40024BCF6 /* TTTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTopic.m; sourceTree = "<group>"; };
 		614CAECB1CBF3D940024BCF6 /* TTConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTConst.h; sourceTree = "<group>"; };
@@ -155,6 +139,10 @@
 		614CAED01CBF42A50024BCF6 /* TTTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTTopicCell.xib; sourceTree = "<group>"; };
 		614CAED31CBF78CC0024BCF6 /* NSDate+TTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TTExtension.h"; sourceTree = "<group>"; };
 		614CAED41CBF78CC0024BCF6 /* NSDate+TTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TTExtension.m"; sourceTree = "<group>"; };
+		614CAED61CBF8F610024BCF6 /* TTTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTopicViewController.h; sourceTree = "<group>"; };
+		614CAED71CBF8F610024BCF6 /* TTTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTopicViewController.m; sourceTree = "<group>"; };
+		614CAED91CBF94520024BCF6 /* TTRecommendTagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRecommendTagsViewController.h; sourceTree = "<group>"; };
+		614CAEDA1CBF94520024BCF6 /* TTRecommendTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRecommendTagsViewController.m; sourceTree = "<group>"; };
 		9BE5D8F3699F2DA46A7C7218 /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
 		F2CEE48E19591C0F7D286427 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -269,19 +257,11 @@
 			isa = PBXGroup;
 			children = (
 				610347FA1CB65CDB0088F9ED /* TTEssenceViewController.h */,
+				614CAED91CBF94520024BCF6 /* TTRecommendTagsViewController.h */,
+				614CAEDA1CBF94520024BCF6 /* TTRecommendTagsViewController.m */,
 				610347FB1CB65CDB0088F9ED /* TTEssenceViewController.m */,
-				612B5FA01CB900C30095BEF5 /* TTRecommendTagsViewController.h */,
-				612B5FA11CB900C30095BEF5 /* TTRecommendTagsViewController.m */,
-				614CA0231CBE4BA800E42494 /* TTAllViewController.h */,
-				614CA0241CBE4BA800E42494 /* TTAllViewController.m */,
-				614CA0261CBE4BBB00E42494 /* TTVideoViewController.h */,
-				614CA0271CBE4BBB00E42494 /* TTVideoViewController.m */,
-				614CA0291CBE4BD200E42494 /* TTVoiceViewController.h */,
-				614CA02A1CBE4BD200E42494 /* TTVoiceViewController.m */,
-				614CA02C1CBE4BE900E42494 /* TTPictureViewController.h */,
-				614CA02D1CBE4BE900E42494 /* TTPictureViewController.m */,
-				614CA02F1CBE4BFA00E42494 /* TTWordViewController.h */,
-				614CA0301CBE4BFA00E42494 /* TTWordViewController.m */,
+				614CAED61CBF8F610024BCF6 /* TTTopicViewController.h */,
+				614CAED71CBF8F610024BCF6 /* TTTopicViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -690,35 +670,31 @@
 				610348261CB65CDB0088F9ED /* UIView+TTExtension.m in Sources */,
 				610348251CB65CDB0088F9ED /* UIBarButtonItem+TTExtension.m in Sources */,
 				614CAECD1CBF3D940024BCF6 /* TTConst.m in Sources */,
-				614CA0281CBE4BBB00E42494 /* TTVideoViewController.m in Sources */,
 				612B5F8F1CB8915C0095BEF5 /* TTRecommendCategory.m in Sources */,
 				614CA01D1CBDE18000E42494 /* TTTextFiled.m in Sources */,
 				612B5F9A1CB8FCCD0095BEF5 /* TTRecommendTag.m in Sources */,
 				610348221CB65CDB0088F9ED /* TTMeViewController.m in Sources */,
 				614CAED51CBF78CC0024BCF6 /* NSDate+TTExtension.m in Sources */,
-				614CA02E1CBE4BE900E42494 /* TTPictureViewController.m in Sources */,
 				610348231CB65CDB0088F9ED /* TTNewViewController.m in Sources */,
 				611A000C1CB73EFC006B2585 /* TTNavigationController.m in Sources */,
+				614CAED81CBF8F610024BCF6 /* TTTopicViewController.m in Sources */,
 				610348211CB65CDB0088F9ED /* TTFriendTrendsViewController.m in Sources */,
 				610348201CB65CDB0088F9ED /* TTEssenceViewController.m in Sources */,
 				611A000F1CB749DE006B2585 /* TTRecommendViewController.m in Sources */,
 				610BC75C1CBB2F92000D3EAA /* TTLoginRegisterViewController.m in Sources */,
 				614CAED11CBF42A50024BCF6 /* TTTopicCell.m in Sources */,
 				612B5F9E1CB8FCEF0095BEF5 /* TTRecommendTagCell.m in Sources */,
-				614CA0251CBE4BA800E42494 /* TTAllViewController.m in Sources */,
 				614CA0201CBE31F300E42494 /* TTPushGuideView.m in Sources */,
 				610348241CB65CDB0088F9ED /* AppDelegate.m in Sources */,
 				610348291CB65CDB0088F9ED /* TTTabBar.m in Sources */,
 				614CAEC61CBF32A40024BCF6 /* TTTopic.m in Sources */,
 				611A00181CB75210006B2585 /* Foundation+Log.m in Sources */,
-				612B5FA21CB900C30095BEF5 /* TTRecommendTagsViewController.m in Sources */,
 				610348281CB65CDB0088F9ED /* main.m in Sources */,
 				612B5F921CB8A6110095BEF5 /* TTRecommendUser.m in Sources */,
-				614CA0311CBE4BFA00E42494 /* TTWordViewController.m in Sources */,
 				612B5F8B1CB891400095BEF5 /* TTRecommendCategoryCell.m in Sources */,
 				610348271CB65CDB0088F9ED /* TTTabBarController.m in Sources */,
 				612B5F961CB8A6330095BEF5 /* TTRecommendUserCell.m in Sources */,
-				614CA02B1CBE4BD200E42494 /* TTVoiceViewController.m in Sources */,
+				614CAEDB1CBF94520024BCF6 /* TTRecommendTagsViewController.m in Sources */,
 				6107F5451CBC926F00DA501D /* TTVerticalButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,19 +1,19 @@
 //
-//  TTWordViewController.m
+//  TTTopicViewController.m
 //  百思不得姐
 //
-//  Created by 李涛涛 on 16/4/13.
+//  Created by 李涛涛 on 16/4/14.
 //  Copyright © 2016年 李涛涛. All rights reserved.
 //
 
-#import "TTWordViewController.h"
+#import "TTTopicViewController.h"
 #import <AFNetworking.h>
 #import <UIImageView+WebCache.h>
 #import <MJExtension.h>
 #import <MJRefresh.h>
 #import "TTTopic.h"
 #import "TTTopicCell.h"
-@interface TTWordViewController ()
+@interface TTTopicViewController ()
 /** 帖子数据 */
 @property (nonatomic, strong) NSMutableArray *topics;
 /** 当前页码 */
@@ -24,7 +24,7 @@
 @property (nonatomic, strong) NSDictionary *params;
 @end
 
-@implementation TTWordViewController
+@implementation TTTopicViewController
 
 - (NSMutableArray *)topics
 {
@@ -67,7 +67,7 @@ static NSString * const TTTopicCellId = @"topic";
     self.tableView.mj_header.automaticallyChangeAlpha = YES;
     [self.tableView.mj_header beginRefreshing];
     
-        self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
 }
 
 
@@ -80,7 +80,7 @@ static NSString * const TTTopicCellId = @"topic";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"data";
-    params[@"type"] = @"29";
+    params[@"type"] = @(self.type);
     self.params = params;
     
     //发送请求
@@ -105,7 +105,7 @@ static NSString * const TTTopicCellId = @"topic";
 {
     //结束下拉
     [self.tableView.mj_header endRefreshing];
-
+    
     
     //参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
@@ -150,7 +150,7 @@ static NSString * const TTTopicCellId = @"topic";
     cell.topic = self.topics[indexPath.row];
     
     return cell;
-
+    
 }
 
 #pragma -mark 代理方法
@@ -158,4 +158,5 @@ static NSString * const TTTopicCellId = @"topic";
 {
     return 200;
 }
+
 @end

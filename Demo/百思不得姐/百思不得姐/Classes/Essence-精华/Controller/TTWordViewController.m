@@ -12,7 +12,7 @@
 #import <MJExtension.h>
 #import <MJRefresh.h>
 #import "TTTopic.h"
-
+#import "TTTopicCell.h"
 @interface TTWordViewController ()
 /** 帖子数据 */
 @property (nonatomic, strong) NSMutableArray *topics;
@@ -41,7 +41,7 @@
     
     [self setupRefresh];
 }
-
+static NSString * const TTTopicCellId = @"topic";
 - (void)setupTableView
 {
     //设置内边距
@@ -51,6 +51,12 @@
     
     //设置滚动条的内边距
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    
+    self.tableView.separatorStyle = UITableViewCellEditingStyleNone;
+    self.tableView.backgroundColor = [UIColor clearColor];
+    
+    //注册
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TTTopicCell class]) bundle:nil] forCellReuseIdentifier:TTTopicCellId];
 }
 
 #pragma -mark 刷新控件
@@ -139,22 +145,17 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    TTTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:TTTopicCellId];
     
-    static NSString *ID = @"cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
-    
-    TTTopic *topic = self.topics[indexPath.row];
-    cell.textLabel.text = topic.name;
-    cell.detailTextLabel.text = topic.text;
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    cell.topic = self.topics[indexPath.row];
     
     return cell;
+
 }
 
-
+#pragma -mark 代理方法
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 200;
+}
 @end

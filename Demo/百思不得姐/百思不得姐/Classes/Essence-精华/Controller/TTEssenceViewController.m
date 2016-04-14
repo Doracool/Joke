@@ -47,6 +47,8 @@
  */
 - (void)setupChildVces
 {
+    TTWordViewController *word = [[TTWordViewController alloc] init];
+    [self addChildViewController:word];
     TTAllViewController *all = [[TTAllViewController alloc] init];
     [self addChildViewController:all];
     TTVideoViewController *video = [[TTVideoViewController alloc] init];
@@ -55,8 +57,6 @@
     [self addChildViewController:voice];
     TTPictureViewController *picture = [[TTPictureViewController alloc] init];
     [self addChildViewController:picture];
-    TTWordViewController *word = [[TTWordViewController alloc] init];
-    [self addChildViewController:word];
 }
 
 - (void)setupTitlesView

@@ -46,7 +46,28 @@
     self.createTimeLabel.text = topic.create_time;
     
     //设置按钮文字
+    [self setupButtonTitle:self.dingButton count:topic.ding placeholder:@"顶"];
+    [self setupButtonTitle:self.caiButton count:topic.cai placeholder:@"踩"];
+    [self setupButtonTitle:self.shareButton count:topic.repost placeholder:@"分享"];
+    [self setupButtonTitle:self.commentButton count:topic.comment placeholder:@"评论"];
     
+    
+}
+
+- (void)testDate:(NSString *)create_time
+{
+    //时间日期格式
+    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+    //设置日期格式(y:年 M:月 d:日 H:时 m:分 s:秒)
+    fmt.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    
+    //当前时间
+    NSDate *now = [NSDate date];
+    
+    //发帖时间
+    NSDate *create = [fmt dateFromString:create_time];
+    
+    TTLog(@"%@",[now deltaFrom:create]);
 }
 
 - (void)setupButtonTitle:(UIButton *)button count:(NSInteger)count placeholder:(NSString *)placeholder

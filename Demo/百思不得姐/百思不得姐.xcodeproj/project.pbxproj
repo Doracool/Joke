@@ -51,6 +51,7 @@
 		614CAECD1CBF3D940024BCF6 /* TTConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CAECC1CBF3D940024BCF6 /* TTConst.m */; };
 		614CAED11CBF42A50024BCF6 /* TTTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CAECF1CBF42A50024BCF6 /* TTTopicCell.m */; };
 		614CAED21CBF42A50024BCF6 /* TTTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 614CAED01CBF42A50024BCF6 /* TTTopicCell.xib */; };
+		614CAED51CBF78CC0024BCF6 /* NSDate+TTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CAED41CBF78CC0024BCF6 /* NSDate+TTExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +153,8 @@
 		614CAECE1CBF42A50024BCF6 /* TTTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTopicCell.h; sourceTree = "<group>"; };
 		614CAECF1CBF42A50024BCF6 /* TTTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTopicCell.m; sourceTree = "<group>"; };
 		614CAED01CBF42A50024BCF6 /* TTTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTTopicCell.xib; sourceTree = "<group>"; };
+		614CAED31CBF78CC0024BCF6 /* NSDate+TTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TTExtension.h"; sourceTree = "<group>"; };
+		614CAED41CBF78CC0024BCF6 /* NSDate+TTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TTExtension.m"; sourceTree = "<group>"; };
 		9BE5D8F3699F2DA46A7C7218 /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
 		F2CEE48E19591C0F7D286427 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -451,6 +454,8 @@
 				610348151CB65CDB0088F9ED /* UIBarButtonItem+TTExtension.m */,
 				610348161CB65CDB0088F9ED /* UIView+TTExtension.h */,
 				610348171CB65CDB0088F9ED /* UIView+TTExtension.m */,
+				614CAED31CBF78CC0024BCF6 /* NSDate+TTExtension.h */,
+				614CAED41CBF78CC0024BCF6 /* NSDate+TTExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -690,6 +695,7 @@
 				614CA01D1CBDE18000E42494 /* TTTextFiled.m in Sources */,
 				612B5F9A1CB8FCCD0095BEF5 /* TTRecommendTag.m in Sources */,
 				610348221CB65CDB0088F9ED /* TTMeViewController.m in Sources */,
+				614CAED51CBF78CC0024BCF6 /* NSDate+TTExtension.m in Sources */,
 				614CA02E1CBE4BE900E42494 /* TTPictureViewController.m in Sources */,
 				610348231CB65CDB0088F9ED /* TTNewViewController.m in Sources */,
 				611A000C1CB73EFC006B2585 /* TTNavigationController.m in Sources */,

@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
 /** 是否新浪加V */
 @property (weak, nonatomic) IBOutlet UIImageView *sinaVView;
+@property (weak, nonatomic) IBOutlet UILabel *text_label;
 @end
 
 @implementation TTTopicCell
@@ -55,6 +56,8 @@
     [self setupButtonTitle:self.shareButton count:topic.repost placeholder:@"分享"];
     [self setupButtonTitle:self.commentButton count:topic.comment placeholder:@"评论"];
     
+    //设置帖子的文字内容
+    self.text_label.text = topic.text;
     
 }
 

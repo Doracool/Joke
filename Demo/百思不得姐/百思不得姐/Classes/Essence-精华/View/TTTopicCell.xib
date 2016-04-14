@@ -145,8 +145,15 @@
                             <constraint firstAttribute="width" constant="14" id="hie-K0-8vc"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oa-qN-R9e">
+                        <rect key="frame" x="10" y="55" width="347" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5oa-qN-R9e" secondAttribute="trailing" constant="2" id="25n-nr-uMS"/>
                     <constraint firstItem="nrl-3M-BG1" firstAttribute="top" secondItem="jND-HS-UNY" secondAttribute="top" id="BM4-1r-2ce"/>
                     <constraint firstItem="z1T-4L-pXa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KzF-7u-Nac"/>
                     <constraint firstItem="FhW-ri-9ra" firstAttribute="bottom" secondItem="wpu-2A-lcE" secondAttribute="bottom" id="N72-jk-o55"/>
@@ -154,10 +161,12 @@
                     <constraint firstItem="jND-HS-UNY" firstAttribute="top" secondItem="wpu-2A-lcE" secondAttribute="top" id="T9v-uF-vdf"/>
                     <constraint firstItem="wpu-2A-lcE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="TBk-hG-D2X"/>
                     <constraint firstAttribute="trailing" secondItem="nrl-3M-BG1" secondAttribute="trailing" constant="10" id="Uak-R2-cRN"/>
+                    <constraint firstItem="5oa-qN-R9e" firstAttribute="top" secondItem="FhW-ri-9ra" secondAttribute="bottom" constant="10" id="b3U-Tk-w9T"/>
                     <constraint firstItem="jND-HS-UNY" firstAttribute="leading" secondItem="wpu-2A-lcE" secondAttribute="trailing" constant="10" id="d6g-gv-ilC"/>
                     <constraint firstItem="wpu-2A-lcE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hbW-FL-eVH"/>
                     <constraint firstItem="FhW-ri-9ra" firstAttribute="leading" secondItem="jND-HS-UNY" secondAttribute="leading" id="htE-Ob-OtL"/>
                     <constraint firstItem="X8S-f2-OCe" firstAttribute="trailing" secondItem="wpu-2A-lcE" secondAttribute="trailing" constant="5" id="lvn-pA-E9A"/>
+                    <constraint firstItem="5oa-qN-R9e" firstAttribute="leading" secondItem="wpu-2A-lcE" secondAttribute="leading" id="o4S-AF-DDN"/>
                     <constraint firstAttribute="trailing" secondItem="z1T-4L-pXa" secondAttribute="trailing" id="oQq-IJ-dyk"/>
                     <constraint firstAttribute="bottom" secondItem="z1T-4L-pXa" secondAttribute="bottom" id="xM0-dk-J4t"/>
                 </constraints>
@@ -171,6 +180,7 @@
                 <outlet property="profileImageView" destination="wpu-2A-lcE" id="eVl-AC-XZG"/>
                 <outlet property="shareButton" destination="Joy-j4-Rb0" id="ejZ-iE-558"/>
                 <outlet property="sinaVView" destination="X8S-f2-OCe" id="iLn-o8-mDF"/>
+                <outlet property="text_label" destination="5oa-qN-R9e" id="t3q-6L-QS2"/>
             </connections>
             <point key="canvasLocation" x="324.5" y="543.5"/>
         </tableViewCell>

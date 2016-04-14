@@ -156,7 +156,18 @@ static NSString * const TTTopicCellId = @"topic";
 #pragma -mark 代理方法
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 200;
+    //取出帖子模型
+    TTTopic *topic = self.topics[indexPath.row];
+    
+    //文字的最大尺寸
+    CGSize maxSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - 4 * TTTopicCellMargin, MAXFLOAT);
+    
+    CGFloat textH = [topic.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
+    
+    //cell高度
+    CGFloat ceelH = TTTopicCellTextY + textH + TTTopicCellBottomBarH + 2 * TTTopicCellMargin;
+    
+    return ceelH;
 }
 
 @end

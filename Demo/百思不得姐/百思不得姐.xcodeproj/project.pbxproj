@@ -48,6 +48,7 @@
 		614CA02E1CBE4BE900E42494 /* TTPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CA02D1CBE4BE900E42494 /* TTPictureViewController.m */; };
 		614CA0311CBE4BFA00E42494 /* TTWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CA0301CBE4BFA00E42494 /* TTWordViewController.m */; };
 		614CAEC61CBF32A40024BCF6 /* TTTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CAEC51CBF32A40024BCF6 /* TTTopic.m */; };
+		614CAECD1CBF3D940024BCF6 /* TTConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 614CAECC1CBF3D940024BCF6 /* TTConst.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +145,8 @@
 		614CA0301CBE4BFA00E42494 /* TTWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTWordViewController.m; sourceTree = "<group>"; };
 		614CAEC41CBF32A40024BCF6 /* TTTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTopic.h; sourceTree = "<group>"; };
 		614CAEC51CBF32A40024BCF6 /* TTTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTopic.m; sourceTree = "<group>"; };
+		614CAECB1CBF3D940024BCF6 /* TTConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTConst.h; sourceTree = "<group>"; };
+		614CAECC1CBF3D940024BCF6 /* TTConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTConst.m; sourceTree = "<group>"; };
 		9BE5D8F3699F2DA46A7C7218 /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
 		F2CEE48E19591C0F7D286427 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -427,6 +430,8 @@
 				6103481C1CB65CDB0088F9ED /* PrefixHeader.pch */,
 				6103481D1CB65CDB0088F9ED /* View */,
 				611A00171CB75210006B2585 /* Foundation+Log.m */,
+				614CAECB1CBF3D940024BCF6 /* TTConst.h */,
+				614CAECC1CBF3D940024BCF6 /* TTConst.m */,
 			);
 			path = "Other-其他";
 			sourceTree = "<group>";
@@ -670,6 +675,7 @@
 			files = (
 				610348261CB65CDB0088F9ED /* UIView+TTExtension.m in Sources */,
 				610348251CB65CDB0088F9ED /* UIBarButtonItem+TTExtension.m in Sources */,
+				614CAECD1CBF3D940024BCF6 /* TTConst.m in Sources */,
 				614CA0281CBE4BBB00E42494 /* TTVideoViewController.m in Sources */,
 				612B5F8F1CB8915C0095BEF5 /* TTRecommendCategory.m in Sources */,
 				614CA01D1CBDE18000E42494 /* TTTextFiled.m in Sources */,

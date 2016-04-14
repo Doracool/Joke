@@ -37,7 +37,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setupTableView];
+    
     [self setupRefresh];
+}
+
+- (void)setupTableView
+{
+    //设置内边距
+    CGFloat bottom = self.tabBarController.tabBar.height;
+    CGFloat top = TTTitilesViewY + TTTitilesViewY;
+    self.tableView.contentInset = UIEdgeInsetsMake(top, 0, bottom, 0);
+    
+    //设置滚动条的内边距
+    self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
 }
 
 #pragma -mark 刷新控件
@@ -84,18 +97,17 @@
 
 - (void)loadMoreTopics
 {
-    return;
     //结束下拉
     [self.tableView.mj_header endRefreshing];
-    
-    self.page++;
+
     
     //参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"data";
     params[@"type"] = @"29";
-    params[@"page"] = @(self.page);
+    NSInteger page = self.page + 1;
+    params[@"page"] = @(page);
     params[@"maxtime"] = self.maxtime;
     self.params = params;
     

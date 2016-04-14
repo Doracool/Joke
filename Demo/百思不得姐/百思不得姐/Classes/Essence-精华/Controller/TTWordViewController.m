@@ -7,9 +7,12 @@
 //
 
 #import "TTWordViewController.h"
+#import <AFNetworking.h>
+#import <UIImageView+WebCache.h>
 
 @interface TTWordViewController ()
-
+/** 帖子数据 */
+@property (nonatomic, strong) NSArray *topics;
 @end
 
 @implementation TTWordViewController
@@ -17,11 +20,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    //参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"a"] = @"list";
+    params[@"c"] = @"data";
+    params[@"type"] = @"29";
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //发送请求
+    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        self.topics = responseObject[@"list"];
+        
+        [self.tableView reloadData];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,7 +50,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 50;
+    return self.topics.count;
 }
 
 
@@ -48,10 +60,13 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
     }
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"%@-----%zd",[self class],indexPath.row];
+    NSDictionary *topic = self.topics[indexPath.row];
+    cell.textLabel.text = topic[@"name"];
+    cell.detailTextLabel.text = topic[@"text"];
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:topic[@"profile_image"]] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+
     
     return cell;
 }

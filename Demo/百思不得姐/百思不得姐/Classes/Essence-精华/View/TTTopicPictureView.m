@@ -51,7 +51,7 @@
         self.imageView.contentMode = UIViewContentModeScaleAspectFill;
     }else{
         self.seeBigButton.hidden = YES;
-        self.imageView.contentMode = UIViewContentModeScaleAspectFill;
+        self.imageView.contentMode = UIViewContentModeScaleToFill;
     }
 }
 @end

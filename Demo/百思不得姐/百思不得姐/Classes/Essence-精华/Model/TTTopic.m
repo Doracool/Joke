@@ -75,7 +75,7 @@
             CGFloat pictureH = pictureW * self.height / self.width;
             
             if (pictureH >= TTTopicCellPictureMaxH) {
-                pictureH = TTTopicCellPictureMaxH;
+                pictureH = TTTopicCellPictureBreakH;
                 self.bigPicture = YES;
             }
             

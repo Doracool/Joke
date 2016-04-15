@@ -44,22 +44,27 @@
 - (void)setupChildVces
 {
     TTTopicViewController *word = [[TTTopicViewController alloc] init];
+    word.title = @"段子";
     word.type = TTTopicTypeWord;
     [self addChildViewController:word];
     
     TTTopicViewController *all = [[TTTopicViewController alloc] init];
+    all.title = @"全部";
     all.type = TTTopicTypeAll;
     [self addChildViewController:all];
     
     TTTopicViewController *video = [[TTTopicViewController alloc] init];
+    video.title = @"视频";
     video.type = TTTopicTypeVideo;
     [self addChildViewController:video];
     
     TTTopicViewController *voice = [[TTTopicViewController alloc] init];
+    voice.title = @"声音";
     voice.type = TTTopicTypeVoice;
     [self addChildViewController:voice];
     
     TTTopicViewController *picture = [[TTTopicViewController alloc] init];
+    picture.title = @"图片";
     picture.type = TTTopicTypePicture;
     [self addChildViewController:picture];
 }
@@ -84,16 +89,16 @@
     self.indicatorView = indicatorView;
     
     //内部的子标签
-    NSArray *titles = @[@"全部",@"视频",@"声音",@"图片",@"段子"];
-    CGFloat width = titlesView.width / titles.count;
+    CGFloat width = titlesView.width / self.childViewControllers.count;
     CGFloat height = titlesView.height;
-    for (NSInteger i = 0; i < titles.count ;i++) {
+    for (NSInteger i = 0; i < self.childViewControllers.count ;i++) {
         UIButton *button = [[UIButton alloc] init];
         button.tag = i;
         button.height = height;
         button.width = width;
         button.x = i * width;
-        [button setTitle:titles[i] forState:UIControlStateNormal];
+        UIViewController *vc = self.childViewControllers[i];
+        [button setTitle:vc.title forState:UIControlStateNormal];
         [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor redColor] forState:UIControlStateDisabled];
         button.titleLabel.font = [UIFont systemFontOfSize:14];

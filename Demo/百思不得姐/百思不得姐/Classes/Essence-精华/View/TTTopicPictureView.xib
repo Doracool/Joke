@@ -11,12 +11,8 @@
             <rect key="frame" x="0.0" y="0.0" width="345" height="273"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common-gif" translatesAutoresizingMaskIntoConstraints="NO" id="Tqd-W3-zEg">
-                    <rect key="frame" x="0.0" y="0.0" width="31" height="31"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="31" id="iOF-xq-78M"/>
-                        <constraint firstAttribute="height" constant="31" id="wsr-My-hoS"/>
-                    </constraints>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EVK-Wm-IFa">
+                    <rect key="frame" x="0.0" y="0.0" width="345" height="273"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kq0-WG-0az">
                     <rect key="frame" x="0.0" y="230" width="345" height="43"/>
@@ -25,8 +21,12 @@
                     </constraints>
                     <state key="normal" title="点击查看全图" image="see-big-picture" backgroundImage="see-big-picture-background"/>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EVK-Wm-IFa">
-                    <rect key="frame" x="0.0" y="0.0" width="345" height="273"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common-gif" translatesAutoresizingMaskIntoConstraints="NO" id="Tqd-W3-zEg">
+                    <rect key="frame" x="0.0" y="0.0" width="31" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="iOF-xq-78M"/>
+                        <constraint firstAttribute="height" constant="31" id="wsr-My-hoS"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

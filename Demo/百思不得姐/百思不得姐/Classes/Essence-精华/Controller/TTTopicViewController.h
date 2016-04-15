@@ -8,14 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum {
-    TTTopicTypeAll = 1,
-    TTTopicTypePicture = 10,
-    TTTopicTypeWord = 29,
-    TTTopicTypeVoice = 31,
-    TTTopicTypeVideo = 41
-} TTTopicType;
-
 @interface TTTopicViewController : UITableViewController
 /** 帖子类型(交给子类来实现) */
 @property (nonatomic, assign) TTTopicType type;

@@ -7,9 +7,14 @@
 //
 
 #import "TTRecommendCategory.h"
+#import <MJExtension.h>
 
 @implementation TTRecommendCategory
 
++ (NSDictionary *)mj_replacedKeyFromPropertyName
+{
+    return @{@"ID" : @"id"};
+}
 - (NSMutableArray *)users
 {
     if (!_users) {

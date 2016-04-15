@@ -10,7 +10,9 @@
 
 @interface TTRecommendCategory : NSObject
 //id
-@property (nonatomic, assign) NSInteger id;
+@property (nonatomic, assign) NSInteger ID;
+/** 描述 */
+@property (nonatomic, copy) NSString *desc;
 //总数
 @property (nonatomic, assign) NSInteger count;
 //名字

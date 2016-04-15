@@ -7,10 +7,21 @@
 //
 
 #import "TTTopic.h"
+#import <MJExtension.h>
 
 @implementation TTTopic
 {
     CGFloat _cellHeight;
+    CGRect _pictureF;
+}
+
++ (NSDictionary *)mj_replacedKeyFromPropertyName
+{
+    return @{
+             @"small_image" : @"image0",
+             @"large_image" : @"image1",
+             @"middle_image" : @"image2"
+             };
 }
 - (NSString *)create_time
 {
@@ -54,7 +65,31 @@
         CGFloat textH = [self.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
         
         //cell高度
-        _cellHeight = TTTopicCellTextY + textH + TTTopicCellBottomBarH + TTTopicCellMargin * 2;
+        _cellHeight = TTTopicCellTextY + textH + TTTopicCellMargin;
+        
+        //根据段子的类型来计算cell的高度
+        if (self.type == TTTopicTypePicture) {
+            //图片显示出来的宽度
+            CGFloat pictureW = maxSize.width;
+            //图片显示出来的高度
+            CGFloat pictureH = pictureW * self.height / self.width;
+            
+            if (pictureH >= TTTopicCellPictureMaxH) {
+                pictureH = TTTopicCellPictureMaxH;
+                self.bigPicture = YES;
+            }
+            
+            //计算图片控件的frame
+            CGFloat pictureX = TTTopicCellMargin;
+            CGFloat pictureY = TTTopicCellTextY + textH + TTTopicCellMargin;
+            _pictureF = CGRectMake(pictureX, pictureY, pictureW, pictureH);
+            
+            _cellHeight += pictureH + TTTopicCellMargin;
+        }else if (self.type == TTTopicTypeVoice){
+            
+        }
+        //底部工具条的高度
+        _cellHeight += TTTopicCellBottomBarH + TTTopicCellMargin;
     }
     return _cellHeight;
 }
